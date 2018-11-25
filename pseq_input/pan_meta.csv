@@ -1,0 +1,1005 @@
+Subject_ID,Geographical Location,Geographical zone in India ,Gender,AGE  in years,Life style pattern,BMI,Obese/Non Obese 
+Subject-1001,Chennai,South,Male,34,Non Sedentary,26.8122,Non-Obese
+Subject-1002,Chennai,South,Male,64,Non Sedentary,23.2434,Non-Obese
+Subject-1003,Chennai,South,Female,54,Non Sedentary,32,Obese
+Subject-1004,Chennai,South,Female,29,Non Sedentary,24.9199,Non-Obese
+Subject-1005,Chennai,South,Female,24,Non Sedentary,28.3987,Non-Obese
+Subject-1006,Chennai,South,Female,49,Non Sedentary,27.0552,Non-Obese
+Subject-1007,Chennai,South,Male,29,Non Sedentary,24.3865,Non-Obese
+Subject-1008,Chennai,South,Male,27,Non Sedentary,37.3419,Obese
+Subject-1009,Chennai,South,Male,58,Non Sedentary,29.976,Non-Obese
+Subject-1010,Chennai,South,Male,25,Non Sedentary,21.6713,Non-Obese
+Subject-1011,Chennai,South,Male,29,Non Sedentary,25.7117,Non-Obese
+Subject-1012,Chennai,South,Female,42,Non Sedentary,30.1338,Obese
+Subject-1013,Chennai,South,Male,42,Non Sedentary,20.4284,Non-Obese
+Subject-1014,Chennai,South,Female,38,Non Sedentary,30.0801,Obese
+Subject-1015,Chennai,South,Female,29,Non Sedentary,21.9076,Non-Obese
+Subject-1016,Chennai,South,Female,56,Non Sedentary,32.4619,Obese
+Subject-1017,Chennai,South,Male,30,Non Sedentary,30.0232,Obese
+Subject-1018,Chennai,South,Female,35,Non Sedentary,30.4834,Obese
+Subject-1019,Chennai,South,Male,41,Non Sedentary,25.42,Non-Obese
+Subject-1020,Chennai,South,Female,44,Non Sedentary,31.1634,Obese
+Subject-1021,Chennai,South,Male,48,Non Sedentary,24.5243,Non-Obese
+Subject-1022,Chennai,South,Female,39,Non Sedentary,23.1911,Non-Obese
+Subject-1023,Chennai,South,Male,42,Non Sedentary,31.2394,Obese
+Subject-1024,Chennai,South,Female,25,Non Sedentary,30.1788,Obese
+Subject-1025,Chennai,South,Male,32,Non Sedentary,22.6627,Non-Obese
+Subject-1026,Chennai,South,Male,31,Non Sedentary,25.1278,Non-Obese
+Subject-1027,Chennai,South,Female,27,Non Sedentary,24.3418,Non-Obese
+Subject-1028,Chennai,South,Male,39,Non Sedentary,23.6203,Non-Obese
+Subject-1029,Chennai,South,Female,35,Non Sedentary,23.03,Non-Obese
+Subject-1030,Chennai,South,Male,37,Non Sedentary,20.984,Non-Obese
+Subject-1031,Chennai,South,Female,35,Non Sedentary,20.202,Non-Obese
+Subject-1032,Chennai,South,Male,28,Non Sedentary,25.6489,Non-Obese
+Subject-1033,Chennai,South,Female,22,Non Sedentary,23.9512,Non-Obese
+Subject-1034,Chennai,South,Male,31,Non Sedentary,22.5306,Non-Obese
+Subject-1035,Chennai,South,Male,24,Non Sedentary,22.2222,Non-Obese
+Subject-1036,Chennai,South,Female,25,Non Sedentary,19.2277,Non-Obese
+Subject-1037,Chennai,South,Female,48,Non Sedentary,26.8352,Non-Obese
+Subject-1038,Chennai,South,Female,60,Non Sedentary,22.8624,Non-Obese
+Subject-1039,Chennai,South,Male,23,Non Sedentary,25.3906,Non-Obese
+Subject-1040,Chennai,South,Female,22,Non Sedentary,34.5168,Obese
+Subject-1041,Chennai,South,Female,21,Non Sedentary,30.3819,Obese
+Subject-1042,Chennai,South,Male,59,Non Sedentary,27.6095,Non-Obese
+Subject-1043,Chennai,South,Female,30,Non Sedentary,22.8329,Non-Obese
+Subject-1044,Chennai,South,Male,19,Non Sedentary,18.7305,Non-Obese
+Subject-1045,Chennai,South,Male,34,Non Sedentary,25.5354,Non-Obese
+Subject-1046,Chennai,South,Female,19,Non Sedentary,24.5578,Non-Obese
+Subject-1047,Chennai,South,Male,31,Non Sedentary,31.4627,Obese
+Subject-1048,Chennai,South,Female,26,Non Sedentary,30.1103,Obese
+Subject-1049,Chennai,South,Female,58,Sedentary,35.6513,Obese
+Subject-1050,Chennai,South,Female,61,Sedentary,34.2222,Obese
+Subject-1051,Chennai,South,Male,30,Non Sedentary,32.9796,Obese
+Subject-1052,Chennai,South,Female,36,Non Sedentary,30.385,Obese
+Subject-1053,Chennai,South,Male,58,Non Sedentary,32.8306,Obese
+Subject-1054,Chennai,South,Female,26,Non Sedentary,30.1038,Obese
+Subject-1055,Chennai,South,Male,54,Non Sedentary,31.0979,Obese
+Subject-1056,Chennai,South,Female,47,Non Sedentary,31.2452,Obese
+Subject-1057,Chennai,South,Female,26,Non Sedentary,32.8731,Obese
+Subject-1058,Chennai,South,Female,51,Non Sedentary,32.0499,Obese
+Subject-1059,Chennai,South,Female,22,Non Sedentary,31.245,Obese
+Subject-1060,Chennai,South,Female,43,Non Sedentary,39.5556,Obese
+Subject-1061,Chennai,South,Male,31,Non Sedentary,30.4834,Obese
+Subject-1062,Chennai,South,Female,55,Sedentary,30.7574,Obese
+Subject-1063,Chennai,South,Female,31,Non Sedentary,36.7902,Obese
+Subject-1064,Chennai,South,Female,30,Non Sedentary,32.4619,Obese
+Subject-1065,Chennai,South,Male,34,Non Sedentary,35.8408,Obese
+Subject-1067,Chennai,South,Female,22,Non Sedentary,35.7072,Obese
+Subject-1068,Chennai,South,Female,32,Non Sedentary,35.1848,Obese
+Subject-1069,Chennai,South,Female,21,Non Sedentary,30.8444,Obese
+Subject-1070,Chennai,South,Female,20,Non Sedentary,30.1788,Obese
+Subject-1071,Chennai,South,Female,21,Non Sedentary,30.4688,Obese
+Subject-1072,Chennai,South,Female,23,Non Sedentary,30.8185,Obese
+Subject-1073,Chennai,South,Female,20,Non Sedentary,30.4935,Obese
+Subject-1074,Chennai,South,Female,21,Non Sedentary,30.2222,Obese
+Subject-1075,Chennai,South,Female,22,Non Sedentary,31.9576,Obese
+Subject-1076,Chennai,South,Female,20,Non Sedentary,30.1021,Obese
+Subject-1077,Chennai,South,Female,19,Non Sedentary,30.4878,Obese
+Subject-1078,Chennai,South,Female,19,Non Sedentary,30.0433,Obese
+Subject-1079,Chennai,South,Female,38,Non Sedentary,30.4688,Obese
+Subject-1080,Chennai,South,Male,47,Non Sedentary,30.1103,Obese
+Subject-1081,Chennai,South,Female,23,Non Sedentary,28.5156,Non-Obese
+Subject-1082,Chennai,South,Female,21,Non Sedentary,30.0801,Obese
+Subject-1083,Chennai,South,Male,30,Non Sedentary,32.8824,Obese
+Subject-1084,Chennai,South,Male,29,Non Sedentary,30.0232,Obese
+Subject-1085,Chennai,South,Female,31,Non Sedentary,30.2222,Obese
+Subject-1086,Chennai,South,Female,21,Non Sedentary,28.6726,Non-Obese
+Subject-1087,Chennai,South,Male,22,Non Sedentary,31.8878,Obese
+Subject-1088,Chennai,South,Male,40,Non Sedentary,29.7527,Non-Obese
+Subject-1089,Chennai,South,Male,32,Non Sedentary,27.5482,Non-Obese
+Subject-1090,Chennai,South,Male,31,Non Sedentary,30.3461,Obese
+Subject-2001,Ahmedabad,West,Male,26,Non Sedentary,25.0135,Non-Obese
+Subject-2002,Ahmedabad,West,Female,25,Non Sedentary,22.7734,Non-Obese
+Subject-2003,Ahmedabad,West,Male,34,Sedentary,28.1359,Non-Obese
+Subject-2004,Ahmedabad,West,Male,25,Sedentary,23.1473,Non-Obese
+Subject-2005,Ahmedabad,West,Male,34,Non Sedentary,25.3069,Non-Obese
+Subject-2006,Ahmedabad,West,Male,24,Sedentary,23.8751,Non-Obese
+Subject-2007,Ahmedabad,West,Male,30,Non Sedentary,28.578,Non-Obese
+Subject-2008,Ahmedabad,West,Male,28,Sedentary,23.6614,Non-Obese
+Subject-2009,Ahmedabad,West,Male,33,Non Sedentary,25.1559,Non-Obese
+Subject-2010,Ahmedabad,West,Male,32,Sedentary,26.9896,Non-Obese
+Subject-2011,Ahmedabad,West,Male,30,Non Sedentary,28.306,Non-Obese
+Subject-2012,Ahmedabad,West,Male,33,Sedentary,25.2826,Non-Obese
+Subject-2013,Ahmedabad,West,Female,35,Non Sedentary,22.8624,Non-Obese
+Subject-2014,Ahmedabad,West,Female,33,Non Sedentary,22.5183,Non-Obese
+Subject-2015,Ahmedabad,West,Male,21,Sedentary,17.5697,Non-Obese
+Subject-2016,Ahmedabad,West,Male,31,Non Sedentary,25.0135,Non-Obese
+Subject-2017,Ahmedabad,West,Male,28,Sedentary,27.7177,Non-Obese
+Subject-2018,Ahmedabad,West,Male,26,Sedentary,25.9107,Non-Obese
+Subject-2019,Ahmedabad,West,Male,25,Non Sedentary,25.4028,Non-Obese
+Subject-2020,Ahmedabad,West,Male,27,Non Sedentary,27.7177,Non-Obese
+Subject-2021,Ahmedabad,West,Male,36,Non Sedentary,24.6755,Non-Obese
+Subject-2022,Ahmedabad,West,Female,20,Non Sedentary,20.3125,Non-Obese
+Subject-2023,Ahmedabad,West,Male,50,Non Sedentary,27.7177,Non-Obese
+Subject-2024,Ahmedabad,West,Male,40,Non Sedentary,25.763,Non-Obese
+Subject-2025,Ahmedabad,West,Female,36,Non Sedentary,25.9107,Non-Obese
+Subject-2026,Ahmedabad,West,Male,38,Non Sedentary,24.8016,Non-Obese
+Subject-2027,Ahmedabad,West,Female,30,Non Sedentary,25.9107,Non-Obese
+Subject-2028,Ahmedabad,West,Male,21,Non Sedentary,25.0135,Non-Obese
+Subject-2029,Ahmedabad,West,Male,48,Non Sedentary,29.7619,Non-Obese
+Subject-2030,Ahmedabad,West,Female,32,Sedentary,24.8889,Non-Obese
+Subject-2031,Ahmedabad,West,Female,38,Sedentary,27.0538,Non-Obese
+Subject-2032,Ahmedabad,West,Male,30,Non Sedentary,21.83,Non-Obese
+Subject-2033,Ahmedabad,West,Female,32,Sedentary,28.6501,Non-Obese
+Subject-2034,Ahmedabad,West,Male,30,Sedentary,23.0518,Non-Obese
+Subject-2035,Ahmedabad,West,Male,36,Non Sedentary,24.8016,Non-Obese
+Subject-2036,Ahmedabad,West,Male,26,Non Sedentary,21.3382,Non-Obese
+Subject-2037,Ahmedabad,West,Male,30,Sedentary,31.1111,Obese
+Subject-2038,Ahmedabad,West,Male,36,Sedentary,31.2386,Obese
+Subject-2039,Ahmedabad,West,Male,22,Sedentary,23.2434,Non-Obese
+Subject-2040,Ahmedabad,West,Female,28,Sedentary,30.4498,Obese
+Subject-2041,Ahmedabad,West,Male,24,Sedentary,33.3276,Obese
+Subject-2042,Ahmedabad,West,Male,38,Sedentary,29.7143,Non-Obese
+Subject-2043,Ahmedabad,West,Female,36,Sedentary,23.4375,Non-Obese
+Subject-2044,Ahmedabad,West,Male,24,Non Sedentary,34.1311,Obese
+Subject-2045,Ahmedabad,West,Male,28,Sedentary,33.7325,Obese
+Subject-2046,Ahmedabad,West,Female,28,Non Sedentary,30.8594,Obese
+Subject-2047,Ahmedabad,West,Male,40,Non Sedentary,31.2386,Obese
+Subject-2048,Ahmedabad,West,Male,29,Sedentary,24.2382,Non-Obese
+Subject-2049,Ahmedabad,West,Male,28,Sedentary,30.4832,Obese
+Subject-2050,Ahmedabad,West,Male,24,Sedentary,30.4867,Obese
+Subject-2052,Ahmedabad,West,Female,22,Sedentary,31.2175,Obese
+Subject-2053,Ahmedabad,West,Female,24,Sedentary,32.0513,Obese
+Subject-2055,Ahmedabad,West,Male,28,Sedentary,27.3356,Non-Obese
+Subject-2056,Ahmedabad,West,Male,25,Sedentary,31.2386,Obese
+Subject-2057,Ahmedabad,West,Male,29,Sedentary,31.25,Obese
+Subject-2058,Ahmedabad,West,Male,32,Sedentary,32.8473,Obese
+Subject-2059,Ahmedabad,West,Female,28,Sedentary,27.5482,Non-Obese
+Subject-2060,Ahmedabad,West,Male,29,Sedentary,30.4218,Obese
+Subject-2061,Ahmedabad,West,Female,31,Sedentary,32.0513,Obese
+Subject-2062,Ahmedabad,West,Female,29,Non Sedentary,35.1563,Obese
+Subject-2063,Ahmedabad,West,Female,24,Non Sedentary,30.8444,Obese
+Subject-2064,Ahmedabad,West,Male,56,Sedentary,29.0533,Non-Obese
+Subject-2065,Ahmedabad,West,Male,41,Non Sedentary,31.1419,Obese
+Subject-2066,Ahmedabad,West,Female,42,Non Sedentary,25.4028,Non-Obese
+Subject-2067,Ahmedabad,West,Male,28,Non Sedentary,30.8642,Obese
+Subject-3001,Nagpur,West,Female,20,Non Sedentary,16.7159,Non-Obese
+Subject-3002,Nagpur,West,Female,23,Non Sedentary,16.6708,Non-Obese
+Subject-3003,Nagpur,West,Female,20,Non Sedentary,15.9306,Non-Obese
+Subject-3004,Nagpur,West,Female,27,Non Sedentary,20.2362,Non-Obese
+Subject-3005,Nagpur,West,Male,31,Non Sedentary,29.1021,Non-Obese
+Subject-3006,Nagpur,West,Female,32,Non Sedentary,21.9584,Non-Obese
+Subject-3007,Nagpur,West,Female,55,Non Sedentary,18.5673,Non-Obese
+Subject-3008,Nagpur,West,Male,35,Non Sedentary,29.3772,Non-Obese
+Subject-3009,Nagpur,West,Male,62,Non Sedentary,33.0178,Obese
+Subject-3010,Nagpur,West,Male,26,Non Sedentary,23.47,Non-Obese
+Subject-3011,Nagpur,West,Male,23,Non Sedentary,20.3125,Non-Obese
+Subject-3012,Nagpur,West,Female,20,Non Sedentary,21.2071,Non-Obese
+Subject-3013,Nagpur,West,Male,60,Sedentary,22.0119,Non-Obese
+Subject-3014,Nagpur,West,Male,45,Non Sedentary,24.6154,Non-Obese
+Subject-3015,Nagpur,West,Female,37,Non Sedentary,30.4688,Obese
+Subject-3016,Nagpur,West,Male,43,Sedentary,18.3432,Non-Obese
+Subject-3017,Nagpur,West,Male,64,Non Sedentary,30.2252,Obese
+Subject-3018,Nagpur,West,Male,31,Non Sedentary,19.5801,Non-Obese
+Subject-3019,Nagpur,West,Female,27,Non Sedentary,18.3432,Non-Obese
+Subject-3020,Nagpur,West,Female,27,Non Sedentary,24.8879,Non-Obese
+Subject-3021,Nagpur,West,Female,33,Non Sedentary,18.9745,Non-Obese
+Subject-3022,Nagpur,West,Male,28,Non Sedentary,26.2985,Non-Obese
+Subject-3023,Nagpur,West,Male,27,Non Sedentary,23.833,Non-Obese
+Subject-3024,Nagpur,West,Male,21,Non Sedentary,20.4444,Non-Obese
+Subject-3025,Nagpur,West,Male,29,Non Sedentary,21.9261,Non-Obese
+Subject-3026,Nagpur,West,Female,34,Non Sedentary,30.841,Obese
+Subject-3027,Nagpur,West,Male,45,Non Sedentary,35.0087,Obese
+Subject-3028,Nagpur,West,Male,36,Non Sedentary,27.645,Non-Obese
+Subject-3029,Nagpur,West,Female,34,Non Sedentary,33.4319,Obese
+Subject-3030,Nagpur,West,Female,28,Non Sedentary,20.005,Non-Obese
+Subject-3031,Nagpur,West,Male,43,Non Sedentary,30.4498,Obese
+Subject-3032,Nagpur,West,Male,29,Non Sedentary,26.6123,Non-Obese
+Subject-3033,Nagpur,West,Female,25,Non Sedentary,31.0001,Obese
+Subject-3034,Nagpur,West,Female,29,Non Sedentary,24.1112,Non-Obese
+Subject-3035,Nagpur,West,Male,31,Non Sedentary,28.8473,Non-Obese
+Subject-3036,Nagpur,West,Male,45,Sedentary,26.4876,Non-Obese
+Subject-3037,Nagpur,West,Male,63,Sedentary,28.3404,Non-Obese
+Subject-3038,Nagpur,West,Female,39,Sedentary,26.2059,Non-Obese
+Subject-3039,Nagpur,West,Female,20,Non Sedentary,20.3125,Non-Obese
+Subject-3040,Nagpur,West,Male,34,Non Sedentary,28.7255,Non-Obese
+Subject-3041,Nagpur,West,Male,31,Non Sedentary,24.2131,Non-Obese
+Subject-3042,Nagpur,West,Male,42,Sedentary,26.9579,Non-Obese
+Subject-3043,Nagpur,West,Female,35,Sedentary,23.7559,Non-Obese
+Subject-3044,Nagpur,West,Male,36,Sedentary,25.2761,Non-Obese
+Subject-3045,Nagpur,West,Female,60,Sedentary,26.2639,Non-Obese
+Subject-3046,Nagpur,West,Female,27,Sedentary,21.7964,Non-Obese
+Subject-3047,Nagpur,West,Male,63,Sedentary,30.4498,Obese
+Subject-3048,Nagpur,West,Female,28,Non Sedentary,30.8594,Obese
+Subject-3049,Nagpur,West,Male,36,Sedentary,30.4498,Obese
+Subject-3050,Nagpur,West,Female,26,Sedentary,31.4837,Obese
+Subject-3051,Nagpur,West,Female,43,Sedentary,32.5081,Obese
+Subject-3052,Nagpur,West,Male,40,Sedentary,30.2959,Obese
+Subject-3053,Nagpur,West,Male,38,Sedentary,30.5695,Obese
+Subject-3054,Nagpur,West,Male,43,Sedentary,26.3441,Non-Obese
+Subject-3055,Nagpur,West,Male,27,Sedentary,30.1757,Obese
+Subject-3056,Nagpur,West,Male,24,Sedentary,29.9723,Non-Obese
+Subject-3057,Nagpur,West,Male,24,Non Sedentary,21.2474,Non-Obese
+Subject-3058,Nagpur,West,Male,29,Sedentary,21.8276,Non-Obese
+Subject-3059,Nagpur,West,Female,28,Sedentary,31.25,Obese
+Subject-3060,Nagpur,West,Female,36,Sedentary,25.0255,Non-Obese
+Subject-3061,Nagpur,West,Female,34,Sedentary,24.1112,Non-Obese
+Subject-3062,Nagpur,West,Female,38,Sedentary,21.7964,Non-Obese
+Subject-3063,Nagpur,West,Female,26,Sedentary,26.5625,Non-Obese
+Subject-3064,Nagpur,West,Male,29,Sedentary,22.7456,Non-Obese
+Subject-3065,Nagpur,West,Male,32,Sedentary,26.3886,Non-Obese
+Subject-3066,Nagpur,West,Male,38,Sedentary,30.414,Obese
+Subject-3067,Nagpur,West,Male,22,Non Sedentary,24.4377,Non-Obese
+Subject-4001,Ajmer,West,Male,27,Non Sedentary,33.6839,Obese
+Subject-4002,Ajmer,West,Female,27,Non Sedentary,22.4323,Non-Obese
+Subject-4003,Ajmer,West,Male,37,Non Sedentary,27.8246,Non-Obese
+Subject-4004,Ajmer,West,Female,50,Sedentary,34.9985,Obese
+Subject-4005,Ajmer,West,Female,37,Non Sedentary,23.3091,Non-Obese
+Subject-4006,Ajmer,West,Male,45,Sedentary,33.834,Obese
+Subject-4007,Ajmer,West,Female,60,Non Sedentary,27.4077,Non-Obese
+Subject-4008,Ajmer,West,Female,42,Non Sedentary,25.7813,Non-Obese
+Subject-4009,Ajmer,West,Male,40,Non Sedentary,32.8742,Obese
+Subject-4010,Ajmer,West,Male,45,Non Sedentary,34.2093,Obese
+Subject-4011,Ajmer,West,Male,26,Non Sedentary,24.8016,Non-Obese
+Subject-4012,Ajmer,West,Male,58,Non Sedentary,26.1393,Non-Obese
+Subject-4013,Ajmer,West,Female,55,Non Sedentary,28.125,Non-Obese
+Subject-4014,Ajmer,West,Male,24,Non Sedentary,22.74,Non-Obese
+Subject-4015,Ajmer,West,Male,45,Non Sedentary,32.112,Obese
+Subject-4016,Ajmer,West,Female,62,Non Sedentary,31.25,Obese
+Subject-4017,Ajmer,West,Male,63,Non Sedentary,22.6757,Non-Obese
+Subject-4018,Ajmer,West,Female,33,Non Sedentary,32.0291,Obese
+Subject-4019,Ajmer,West,Male,34,Non Sedentary,23.1834,Non-Obese
+Subject-4020,Ajmer,West,Male,27,Non Sedentary,25.4694,Non-Obese
+Subject-4021,Ajmer,West,Female,25,Non Sedentary,22.6563,Non-Obese
+Subject-4022,Ajmer,West,Male,40,Non Sedentary,31.8169,Obese
+Subject-4023,Ajmer,West,Female,35,Non Sedentary,23.4375,Non-Obese
+Subject-4024,Ajmer,West,Male,48,Non Sedentary,33.218,Obese
+Subject-4025,Ajmer,West,Male,29,Non Sedentary,31.5358,Obese
+Subject-4026,Ajmer,West,Male,35,Non Sedentary,21.9713,Non-Obese
+Subject-4027,Ajmer,West,Female,48,Non Sedentary,23.9487,Non-Obese
+Subject-4028,Ajmer,West,Female,46,Non Sedentary,24.977,Non-Obese
+Subject-4029,Ajmer,West,Male,23,Non Sedentary,22.5606,Non-Obese
+Subject-4030,Ajmer,West,Male,34,Non Sedentary,20.6916,Non-Obese
+Subject-4031,Ajmer,West,Male,34,Non Sedentary,25.7439,Non-Obese
+Subject-4032,Ajmer,West,Female,36,Non Sedentary,28.1864,Non-Obese
+Subject-4033,Ajmer,West,Male,42,Non Sedentary,23.6122,Non-Obese
+Subject-4034,Ajmer,West,Male,34,Non Sedentary,22.9369,Non-Obese
+Subject-4035,Ajmer,West,Male,44,Non Sedentary,24.8724,Non-Obese
+Subject-4036,Ajmer,West,Female,36,Non Sedentary,18.1955,Non-Obese
+Subject-4037,Ajmer,West,Male,29,Non Sedentary,22.8125,Non-Obese
+Subject-4038,Ajmer,West,Male,49,Non Sedentary,27.9269,Non-Obese
+Subject-4039,Ajmer,West,Male,42,Non Sedentary,25.7439,Non-Obese
+Subject-4040,Ajmer,West,Male,50,Non Sedentary,34.4753,Obese
+Subject-4041,Ajmer,West,Female,60,Sedentary,39.1434,Obese
+Subject-4042,Ajmer,West,Male,42,Non Sedentary,31.1419,Obese
+Subject-4043,Ajmer,West,Female,35,Non Sedentary,32.2421,Obese
+Subject-4044,Ajmer,West,Female,44,Non Sedentary,33.5315,Obese
+Subject-4045,Ajmer,West,Female,60,Non Sedentary,21.048,Non-Obese
+Subject-4046,Ajmer,West,Female,49,Non Sedentary,32.8473,Obese
+Subject-4047,Ajmer,West,Male,36,Non Sedentary,31.1829,Obese
+Subject-4048,Ajmer,West,Male,32,Non Sedentary,32.8241,Obese
+Subject-4049,Ajmer,West,Male,46,Non Sedentary,31.8878,Obese
+Subject-4050,Ajmer,West,Male,36,Non Sedentary,24.0741,Non-Obese
+Subject-4051,Ajmer,West,Male,39,Non Sedentary,23.6614,Non-Obese
+Subject-4052,Ajmer,West,Male,48,Non Sedentary,22.2041,Non-Obese
+Subject-4053,Ajmer,West,Female,50,Non Sedentary,34.9636,Obese
+Subject-4054,Ajmer,West,Male,53,Non Sedentary,31.1419,Obese
+Subject-4055,Ajmer,West,Male,49,Non Sedentary,22.9854,Non-Obese
+Subject-4056,Ajmer,West,Female,43,Non Sedentary,25.1486,Non-Obese
+Subject-4057,Ajmer,West,Female,49,Non Sedentary,36.3281,Obese
+Subject-4058,Ajmer,West,Female,58,Non Sedentary,23.03,Non-Obese
+Subject-4059,Ajmer,West,Female,49,Non Sedentary,36.6285,Obese
+Subject-4060,Ajmer,West,Male,55,Non Sedentary,31.3469,Obese
+Subject-4061,Ajmer,West,Male,35,Non Sedentary,32.0988,Obese
+Subject-4062,Ajmer,West,Female,39,Non Sedentary,21.875,Non-Obese
+Subject-4063,Ajmer,West,Female,41,Non Sedentary,25.8065,Non-Obese
+Subject-4064,Ajmer,West,Female,45,Non Sedentary,34.7656,Obese
+Subject-4065,Ajmer,West,Male,39,Non Sedentary,19.5918,Non-Obese
+Subject-4066,Ajmer,West,Male,42,Non Sedentary,33.91,Obese
+Subject-4067,Ajmer,West,Male,49,Non Sedentary,22.8571,Non-Obese
+Subject-4068,Ajmer,West,Male,25,Non Sedentary,21.7994,Non-Obese
+Subject-4069,Ajmer,West,Female,40,Non Sedentary,33.4622,Obese
+Subject-4070,Ajmer,West,Male,48,Non Sedentary,22.4913,Non-Obese
+Subject-5002,Bhopal,North,Male,43,Non Sedentary,25.7959,Non-Obese
+Subject-5003,Bhopal,North,Female,35,Non Sedentary,24.4473,Non-Obese
+Subject-5004,Bhopal,North,Male,26,Non Sedentary,24.9135,Non-Obese
+Subject-5005,Bhopal,North,Male,63,Sedentary,25.3069,Non-Obese
+Subject-5006,Bhopal,North,Male,45,Non Sedentary,24.6755,Non-Obese
+Subject-5007,Bhopal,North,Female,38,Non Sedentary,24.7409,Non-Obese
+Subject-5008,Bhopal,North,Female,41,Non Sedentary,25.6055,Non-Obese
+Subject-5009,Bhopal,North,Male,28,Sedentary,26.7755,Non-Obese
+Subject-5010,Bhopal,North,Male,32,Sedentary,25.8546,Non-Obese
+Subject-5011,Bhopal,North,Female,54,Sedentary,25.5102,Non-Obese
+Subject-5012,Bhopal,North,Female,32,Sedentary,26.1752,Non-Obese
+Subject-5013,Bhopal,North,Male,40,Non Sedentary,27.4145,Non-Obese
+Subject-5014,Bhopal,North,Female,46,Sedentary,25.3069,Non-Obese
+Subject-5015,Bhopal,North,Female,40,Sedentary,24.8016,Non-Obese
+Subject-5016,Bhopal,North,Male,56,Sedentary,26.2596,Non-Obese
+Subject-5017,Bhopal,North,Male,47,Sedentary,25.0593,Non-Obese
+Subject-5018,Bhopal,North,Male,21,Sedentary,22.7841,Non-Obese
+Subject-5019,Bhopal,North,Male,22,Sedentary,22.4792,Non-Obese
+Subject-5020,Bhopal,North,Female,22,Sedentary,24.2081,Non-Obese
+Subject-5021,Bhopal,North,Female,32,Sedentary,25.4219,Non-Obese
+Subject-5022,Bhopal,North,Female,60,Non Sedentary,28.686,Non-Obese
+Subject-5023,Bhopal,North,Female,62,Sedentary,28.4801,Non-Obese
+Subject-5024,Bhopal,North,Female,36,Non Sedentary,25.2595,Non-Obese
+Subject-5025,Bhopal,North,Male,40,Sedentary,25.8397,Non-Obese
+Subject-5026,Bhopal,North,Male,32,Sedentary,23.7245,Non-Obese
+Subject-5027,Bhopal,North,Female,28,Non Sedentary,25.3137,Non-Obese
+Subject-5028,Bhopal,North,Female,34,Sedentary,24.8112,Non-Obese
+Subject-5029,Bhopal,North,Male,56,Sedentary,26.1473,Non-Obese
+Subject-5030,Bhopal,North,Female,24,Non Sedentary,25.9388,Non-Obese
+Subject-5031,Bhopal,North,Female,50,Sedentary,25.1429,Non-Obese
+Subject-5032,Bhopal,North,Female,26,Sedentary,22.8395,Non-Obese
+Subject-5033,Bhopal,North,Male,29,Non Sedentary,24.8114,Non-Obese
+Subject-5034,Bhopal,North,Male,35,Non Sedentary,25.3062,Non-Obese
+Subject-5035,Bhopal,North,Female,38,Non Sedentary,27.6918,Non-Obese
+Subject-5036,Bhopal,North,Male,34,Sedentary,29.0688,Non-Obese
+Subject-5037,Bhopal,North,Male,37,Sedentary,30.8463,Obese
+Subject-5038,Bhopal,North,Female,25,Non Sedentary,27.6601,Non-Obese
+Subject-5039,Bhopal,North,Female,41,Non Sedentary,30.4878,Obese
+Subject-5040,Bhopal,North,Male,34,Sedentary,27.4286,Non-Obese
+Subject-5041,Bhopal,North,Male,55,Sedentary,27.3797,Non-Obese
+Subject-5042,Bhopal,North,Male,22,Non Sedentary,29.7619,Non-Obese
+Subject-5043,Bhopal,North,Male,58,Non Sedentary,30.7809,Obese
+Subject-5044,Bhopal,North,Female,65,Sedentary,31.25,Obese
+Subject-5045,Bhopal,North,Male,36,Sedentary,30.1788,Obese
+Subject-5046,Bhopal,North,Male,27,Non Sedentary,29.9967,Non-Obese
+Subject-5047,Bhopal,North,Female,42,Non Sedentary,25.0593,Non-Obese
+Subject-5048,Bhopal,North,Female,32,Non Sedentary,30.1103,Obese
+Subject-5050,Bhopal,North,Male,39,Non Sedentary,25.9095,Non-Obese
+Subject-5051,Bhopal,North,Female,65,Non Sedentary,30.4867,Obese
+Subject-5052,Bhopal,North,Male,20,Sedentary,24.9649,Non-Obese
+Subject-5053,Bhopal,North,Female,30,Sedentary,31.2092,Obese
+Subject-5054,Bhopal,North,Male,35,Non Sedentary,27.4406,Non-Obese
+Subject-5055,Bhopal,North,Female,42,Non Sedentary,29.9967,Non-Obese
+Subject-5056,Bhopal,North,Male,34,Sedentary,30.4834,Obese
+Subject-5057,Bhopal,North,Female,26,Non Sedentary,36.2959,Obese
+Subject-5058,Bhopal,North,Male,28,Non Sedentary,35.9184,Obese
+Subject-5059,Bhopal,North,Female,60,Non Sedentary,33.126,Obese
+Subject-5060,Bhopal,North,Female,46,Non Sedentary,30.3871,Obese
+Subject-5061,Bhopal,North,Male,25,Sedentary,30.111,Obese
+Subject-5062,Bhopal,North,Male,63,Non Sedentary,26.3656,Non-Obese
+Subject-5063,Bhopal,North,Male,22,Sedentary,30.1103,Obese
+Subject-5064,Bhopal,North,Female,38,Sedentary,31.6366,Obese
+Subject-5065,Bhopal,North,Female,45,Sedentary,30.0947,Obese
+Subject-5066,Bhopal,North,Male,45,Non Sedentary,26.9598,Non-Obese
+Subject-5067,Bhopal,North,Male,36,Sedentary,27.31,Non-Obese
+Subject-6001,Mangalore,South,Female,38,Non Sedentary,26.6193,Non-Obese
+Subject-6002,Mangalore,South,Female,31,Non Sedentary,23.3275,Non-Obese
+Subject-6003,Mangalore,South,Female,31,Non Sedentary,24.7737,Non-Obese
+Subject-6004,Mangalore,South,Female,29,Non Sedentary,25.4779,Non-Obese
+Subject-6005,Mangalore,South,Female,21,Non Sedentary,15.8131,Non-Obese
+Subject-6006,Mangalore,South,Female,32,Non Sedentary,20.0773,Non-Obese
+Subject-6007,Mangalore,South,Female,24,Non Sedentary,20.1362,Non-Obese
+Subject-6008,Mangalore,South,Female,33,Non Sedentary,19.2336,Non-Obese
+Subject-6009,Mangalore,South,Female,53,Non Sedentary,24.1263,Non-Obese
+Subject-6010,Mangalore,South,Female,25,Non Sedentary,17.0993,Non-Obese
+Subject-6011,Mangalore,South,Male,39,Non Sedentary,24.4473,Non-Obese
+Subject-6012,Mangalore,South,Male,26,Non Sedentary,34.8944,Obese
+Subject-6013,Mangalore,South,Female,21,Non Sedentary,18.2183,Non-Obese
+Subject-6014,Mangalore,South,Female,30,Non Sedentary,17.6254,Non-Obese
+Subject-6015,Mangalore,South,Female,24,Non Sedentary,12.9553,Non-Obese
+Subject-6016,Mangalore,South,Female,42,Non Sedentary,24.1672,Non-Obese
+Subject-6017,Mangalore,South,Male,31,Non Sedentary,17.6471,Non-Obese
+Subject-6018,Mangalore,South,Male,35,Non Sedentary,23.1247,Non-Obese
+Subject-6019,Mangalore,South,Male,24,Non Sedentary,27.7323,Non-Obese
+Subject-6020,Mangalore,South,Male,36,Sedentary,19.9573,Non-Obese
+Subject-6021,Mangalore,South,Male,47,Sedentary,24.2215,Non-Obese
+Subject-6022,Mangalore,South,Female,57,Non Sedentary,30.6667,Obese
+Subject-6023,Mangalore,South,Male,32,Non Sedentary,20.7031,Non-Obese
+Subject-6024,Mangalore,South,Male,45,Non Sedentary,21.4309,Non-Obese
+Subject-6025,Mangalore,South,Male,41,Non Sedentary,27.7344,Non-Obese
+Subject-6026,Mangalore,South,Male,33,Non Sedentary,22.7583,Non-Obese
+Subject-6027,Mangalore,South,Male,48,Non Sedentary,17.7096,Non-Obese
+Subject-6028,Mangalore,South,Male,55,Non Sedentary,22.2762,Non-Obese
+Subject-6029,Mangalore,South,Male,31,Non Sedentary,31.9122,Obese
+Subject-6030,Mangalore,South,Male,41,Non Sedentary,26.2976,Non-Obese
+Subject-6031,Mangalore,South,Male,32,Non Sedentary,19.6927,Non-Obese
+Subject-6032,Mangalore,South,Male,33,Non Sedentary,22.5827,Non-Obese
+Subject-6033,Mangalore,South,Male,32,Sedentary,22.1453,Non-Obese
+Subject-6034,Mangalore,South,Male,33,Non Sedentary,26.9896,Non-Obese
+Subject-6035,Mangalore,South,Male,22,Non Sedentary,20.3074,Non-Obese
+Subject-6036,Mangalore,South,Male,45,Non Sedentary,21.7784,Non-Obese
+Subject-6037,Mangalore,South,Male,35,Non Sedentary,29.0688,Non-Obese
+Subject-6038,Mangalore,South,Male,43,Non Sedentary,20.7967,Non-Obese
+Subject-6039,Mangalore,South,Male,33,Non Sedentary,24.4473,Non-Obese
+Subject-6040,Mangalore,South,Male,49,Non Sedentary,23.2446,Non-Obese
+Subject-6041,Mangalore,South,Male,36,Non Sedentary,19.4932,Non-Obese
+Subject-6042,Mangalore,South,Female,42,Sedentary,26.6999,Non-Obese
+Subject-6043,Mangalore,South,Female,37,Sedentary,21.3741,Non-Obese
+Subject-6045,Mangalore,South,Male,33,Sedentary,30.854,Obese
+Subject-6046,Mangalore,South,Male,41,Sedentary,35.2043,Obese
+Subject-6047,Mangalore,South,Male,29,Sedentary,30.4688,Obese
+Subject-6048,Mangalore,South,Male,29,Sedentary,30.478,Obese
+Subject-6049,Mangalore,South,Male,30,Sedentary,30.1021,Obese
+Subject-6050,Mangalore,South,Male,33,Sedentary,30.1103,Obese
+Subject-6051,Mangalore,South,Male,40,Sedentary,39.7361,Obese
+Subject-6052,Mangalore,South,Male,35,Sedentary,27.0416,Non-Obese
+Subject-6053,Mangalore,South,Male,24,Sedentary,26.4463,Non-Obese
+Subject-6054,Mangalore,South,Male,25,Sedentary,19.2336,Non-Obese
+Subject-6055,Mangalore,South,Male,26,Non Sedentary,26.5338,Non-Obese
+Subject-6056,Mangalore,South,Male,24,Sedentary,25.0995,Non-Obese
+Subject-6057,Mangalore,South,Male,28,Sedentary,30.7574,Obese
+Subject-6058,Mangalore,South,Male,40,Sedentary,27.4077,Non-Obese
+Subject-6059,Mangalore,South,Male,36,Sedentary,25.4028,Non-Obese
+Subject-6060,Mangalore,South,Male,22,Sedentary,31.6443,Obese
+Subject-6061,Mangalore,South,Male,24,Sedentary,30.0947,Obese
+Subject-6062,Mangalore,South,Male,52,Sedentary,34.2936,Obese
+Subject-6063,Mangalore,South,Male,30,Sedentary,26.8386,Non-Obese
+Subject-6064,Mangalore,South,Male,31,Sedentary,30.478,Obese
+Subject-6065,Mangalore,South,Male,27,Sedentary,24.4418,Non-Obese
+Subject-6066,Mangalore,South,Male,27,Sedentary,30.8596,Obese
+Subject-7001,Cochin,South,Female,55,Sedentary,26.1066,Non-Obese
+Subject-7003,Cochin,South,Female,57,Sedentary,29.4321,Non-Obese
+Subject-7004,Cochin,South,Male,37,Sedentary,31.2213,Obese
+Subject-7005,Cochin,South,Male,29,Sedentary,26.3465,Non-Obese
+Subject-7006,Cochin,South,Female,47,Sedentary,26.1249,Non-Obese
+Subject-7007,Cochin,South,Female,52,Sedentary,23.4221,Non-Obese
+Subject-7008,Cochin,South,Male,58,Sedentary,20.2395,Non-Obese
+Subject-7009,Cochin,South,Female,53,Sedentary,19.736,Non-Obese
+Subject-7016,Cochin,South,Female,56,Sedentary,23.833,Non-Obese
+Subject-7017,Cochin,South,Female,59,Sedentary,23.8728,Non-Obese
+Subject-7019,Cochin,South,Female,58,Non Sedentary,25.8065,Non-Obese
+Subject-7023,Cochin,South,Female,27,Sedentary,30.1038,Obese
+Subject-7024,Cochin,South,Male,48,Non Sedentary,24.1115,Non-Obese
+Subject-7025,Cochin,South,Female,53,Non Sedentary,30.8329,Obese
+Subject-7026,Cochin,South,Male,40,Non Sedentary,28.06,Non-Obese
+Subject-7027,Cochin,South,Female,40,Non Sedentary,32.4662,Obese
+Subject-7028,Cochin,South,Male,29,Sedentary,21.7133,Non-Obese
+Subject-7029,Cochin,South,Male,26,Non Sedentary,26.3059,Non-Obese
+Subject-7030,Cochin,South,Female,45,Sedentary,21.1797,Non-Obese
+Subject-7031,Cochin,South,Male,51,Non Sedentary,24.1327,Non-Obese
+Subject-7032,Cochin,South,Male,54,Non Sedentary,25.9823,Non-Obese
+Subject-7033,Cochin,South,Male,55,Non Sedentary,26.3251,Non-Obese
+Subject-7034,Cochin,South,Male,35,Non Sedentary,22.7244,Non-Obese
+Subject-7035,Cochin,South,Male,58,Sedentary,22.7903,Non-Obese
+Subject-7036,Cochin,South,Female,57,Non Sedentary,20.8889,Non-Obese
+Subject-7037,Cochin,South,Male,58,Non Sedentary,20.9902,Non-Obese
+Subject-7038,Cochin,South,Male,56,Sedentary,18.1449,Non-Obese
+Subject-7039,Cochin,South,Female,51,Non Sedentary,19.8991,Non-Obese
+Subject-7040,Cochin,South,Male,37,Non Sedentary,26.2976,Non-Obese
+Subject-7041,Cochin,South,Male,30,Sedentary,22.1231,Non-Obese
+Subject-7042,Cochin,South,Female,22,Sedentary,22.5778,Non-Obese
+Subject-7043,Cochin,South,Female,32,Sedentary,23.5024,Non-Obese
+Subject-7044,Cochin,South,Male,49,Non Sedentary,24.977,Non-Obese
+Subject-7045,Cochin,South,Male,49,Non Sedentary,34.8657,Obese
+Subject-7046,Cochin,South,Male,43,Non Sedentary,30.2992,Obese
+Subject-7047,Cochin,South,Male,60,Non Sedentary,29.3031,Non-Obese
+Subject-7048,Cochin,South,Male,63,Non Sedentary,26.5118,Non-Obese
+Subject-7049,Cochin,South,Male,55,Non Sedentary,38.9739,Obese
+Subject-7050,Cochin,South,Female,51,Non Sedentary,34.9277,Obese
+Subject-7051,Cochin,South,Female,59,Non Sedentary,24.974,Non-Obese
+Subject-7052,Cochin,South,Female,55,Non Sedentary,21.3039,Non-Obese
+Subject-7053,Cochin,South,Male,53,Non Sedentary,35.0765,Obese
+Subject-7054,Cochin,South,Female,59,Non Sedentary,32.4662,Obese
+Subject-7055,Cochin,South,Male,31,Non Sedentary,23.1182,Non-Obese
+Subject-7056,Cochin,South,Male,60,Non Sedentary,30.3871,Obese
+Subject-7057,Cochin,South,Female,63,Non Sedentary,34.626,Obese
+Subject-7058,Cochin,South,Female,34,Non Sedentary,31.8878,Obese
+Subject-7059,Cochin,South,Male,36,Non Sedentary,33.672,Obese
+Subject-7060,Cochin,South,Male,25,Non Sedentary,21.4204,Non-Obese
+Subject-7061,Cochin,South,Male,29,Non Sedentary,24.1638,Non-Obese
+Subject-7062,Cochin,South,Male,37,Sedentary,33.1961,Obese
+Subject-7063,Cochin,South,Female,48,Sedentary,29.3724,Non-Obese
+Subject-7064,Cochin,South,Male,55,Non Sedentary,30.7787,Obese
+Subject-7065,Cochin,South,Male,39,Sedentary,29.0659,Non-Obese
+Subject-7066,Cochin,South,Male,64,Non Sedentary,25.8278,Non-Obese
+Subject-7067,Cochin,South,Male,54,Non Sedentary,30.5241,Obese
+Subject-7068,Cochin,South,Female,53,Non Sedentary,31.5776,Obese
+Subject-7069,Cochin,South,Female,60,Non Sedentary,27.3438,Non-Obese
+Subject-7070,Cochin,South,Male,65,Non Sedentary,23.9395,Non-Obese
+Subject-7071,Cochin,South,Female,58,Non Sedentary,27.3438,Non-Obese
+Subject-7072,Cochin,South,Male,18,Sedentary,20.984,Non-Obese
+Subject-7073,Cochin,South,Male,38,Non Sedentary,29.7458,Non-Obese
+Subject-7074,Cochin,South,Female,32,Sedentary,20.9184,Non-Obese
+Subject-7075,Cochin,South,Female,58,Sedentary,20.0288,Non-Obese
+Subject-7076,Cochin,South,Male,61,Non Sedentary,24.2424,Non-Obese
+Subject-7077,Cochin,South,Female,59,Sedentary,27.1918,Non-Obese
+Subject-7078,Cochin,South,Male,51,Non Sedentary,24.6181,Non-Obese
+Subject-7079,Cochin,South,Male,43,Non Sedentary,33.1213,Obese
+Subject-7080,Cochin,South,Male,61,Non Sedentary,38.039,Obese
+Subject-7081,Cochin,South,Male,36,Sedentary,23.4375,Non-Obese
+Subject-7082,Cochin,South,Female,42,Non Sedentary,33.2986,Obese
+Subject-7083,Cochin,South,Female,33,Non Sedentary,26.7759,Non-Obese
+Subject-7084,Cochin,South,Male,57,Sedentary,34.2857,Obese
+Subject-7085,Cochin,South,Male,36,Sedentary,33.705,Obese
+Subject-7086,Cochin,South,Female,40,Sedentary,30.8185,Obese
+Subject-7087,Cochin,South,Male,50,Non Sedentary,38.4168,Obese
+Subject-7088,Cochin,South,Male,36,Non Sedentary,30.6923,Obese
+Subject-7089,Cochin,South,Male,48,Non Sedentary,34.9481,Obese
+Subject-7090,Cochin,South,Male,58,Non Sedentary,34.2554,Obese
+Subject-7091,Cochin,South,Female,47,Non Sedentary,31.0446,Obese
+Subject-7092,Cochin,South,Male,37,Non Sedentary,28.0402,Non-Obese
+Subject-7093,Cochin,South,Female,41,Sedentary,31.4256,Obese
+Subject-7094,Cochin,South,Female,42,Sedentary,28.3987,Non-Obese
+Subject-7095,Cochin,South,Male,51,Non Sedentary,22.0932,Non-Obese
+Subject-7096,Cochin,South,Female,29,Non Sedentary,31.6158,Obese
+Subject-7097,Cochin,South,Male,35,Non Sedentary,26.8136,Non-Obese
+Subject-7098,Cochin,South,Female,18,Non Sedentary,15.2416,Non-Obese
+Subject-7099,Cochin,South,Male,19,Sedentary,16.4474,Non-Obese
+Subject-7100,Cochin,South,Female,64,Sedentary,38.3707,Obese
+Subject-7101,Cochin,South,Male,55,Non Sedentary,26.398,Non-Obese
+Subject-7102,Cochin,South,Male,45,Non Sedentary,26.4915,Non-Obese
+Subject-7103,Cochin,South,Male,34,Non Sedentary,28.3937,Non-Obese
+Subject-7104,Cochin,South,Male,29,Non Sedentary,26.9896,Non-Obese
+Subject-7105,Cochin,South,Male,27,Non Sedentary,30.3673,Obese
+Subject-7106,Cochin,South,Male,24,Non Sedentary,26.213,Non-Obese
+Subject-7107,Cochin,South,Female,43,Sedentary,31.5886,Obese
+Subject-8001,Mumbai,West,Female,32,Non Sedentary,30.8642,Obese
+Subject-8002,Mumbai,West,Male,36,Sedentary,33.2986,Obese
+Subject-8003,Mumbai,West,Female,61,Sedentary,30.7479,Obese
+Subject-8004,Mumbai,West,Male,28,Non Sedentary,23.6614,Non-Obese
+Subject-8005,Mumbai,West,Female,44,Non Sedentary,20.7756,Non-Obese
+Subject-8006,Mumbai,West,Male,54,Non Sedentary,19.1406,Non-Obese
+Subject-8007,Mumbai,West,Female,21,Sedentary,18.4911,Non-Obese
+Subject-8008,Mumbai,West,Male,18,Sedentary,19.3337,Non-Obese
+Subject-8009,Mumbai,West,Female,50,Sedentary,25.4375,Non-Obese
+Subject-8010,Mumbai,West,Male,60,Sedentary,30.1103,Obese
+Subject-8011,Mumbai,West,Female,48,Sedentary,31.7397,Obese
+Subject-8012,Mumbai,West,Male,57,Non Sedentary,30.8185,Obese
+Subject-8013,Mumbai,West,Male,27,Non Sedentary,23.4221,Non-Obese
+Subject-8014,Mumbai,West,Male,25,Non Sedentary,19.721,Non-Obese
+Subject-8015,Mumbai,West,Female,25,Sedentary,31.6118,Obese
+Subject-8016,Mumbai,West,Male,55,Sedentary,31.2213,Obese
+Subject-8017,Mumbai,West,Male,20,Non Sedentary,22.8571,Non-Obese
+Subject-8018,Mumbai,West,Male,21,Non Sedentary,30.4688,Obese
+Subject-8019,Mumbai,West,Male,22,Non Sedentary,21.6296,Non-Obese
+Subject-8020,Mumbai,West,Female,24,Sedentary,32.0513,Obese
+Subject-8021,Mumbai,West,Male,25,Non Sedentary,31.4627,Obese
+Subject-8022,Mumbai,West,Female,46,Sedentary,30.8012,Obese
+Subject-8023,Mumbai,West,Female,40,Sedentary,30.2222,Obese
+Subject-8024,Mumbai,West,Female,20,Sedentary,30.2978,Obese
+Subject-8025,Mumbai,West,Female,42,Sedentary,30.44,Obese
+Subject-8026,Mumbai,West,Male,57,Non Sedentary,31.7418,Obese
+Subject-8027,Mumbai,West,Female,58,Sedentary,30.2978,Obese
+Subject-8028,Mumbai,West,Female,25,Sedentary,22.6667,Non-Obese
+Subject-8029,Mumbai,West,Male,64,Sedentary,30.854,Obese
+Subject-8030,Mumbai,West,Male,33,Sedentary,23.5078,Non-Obese
+Subject-8031,Mumbai,West,Female,27,Sedentary,33.3205,Obese
+Subject-8032,Mumbai,West,Female,62,Sedentary,25.6312,Non-Obese
+Subject-8033,Mumbai,West,Female,18,Sedentary,18.662,Non-Obese
+Subject-8034,Mumbai,West,Female,39,Sedentary,31.9009,Obese
+Subject-8035,Mumbai,West,Female,47,Sedentary,25.2994,Non-Obese
+Subject-8036,Mumbai,West,Male,56,Non Sedentary,30.8463,Obese
+Subject-8037,Mumbai,West,Female,42,Sedentary,30.3593,Obese
+Subject-8038,Mumbai,West,Male,23,Non Sedentary,20.2449,Non-Obese
+Subject-8039,Mumbai,West,Female,19,Non Sedentary,19.1327,Non-Obese
+Subject-8040,Mumbai,West,Male,20,Sedentary,30.854,Obese
+Subject-8041,Mumbai,West,Female,41,Non Sedentary,31.6885,Obese
+Subject-8042,Mumbai,West,Male,20,Sedentary,26.4236,Non-Obese
+Subject-8043,Mumbai,West,Male,32,Non Sedentary,23.3844,Non-Obese
+Subject-8044,Mumbai,West,Male,22,Sedentary,19.1327,Non-Obese
+Subject-8045,Mumbai,West,Male,41,Sedentary,28.9421,Non-Obese
+Subject-8046,Mumbai,West,Male,35,Sedentary,41.5984,Obese
+Subject-8047,Mumbai,West,Male,47,Non Sedentary,21.4533,Non-Obese
+Subject-8048,Mumbai,West,Female,39,Non Sedentary,21.7778,Non-Obese
+Subject-8049,Mumbai,West,Female,46,Sedentary,31.6337,Obese
+Subject-8050,Mumbai,West,Female,25,Sedentary,31.0543,Obese
+Subject-8051,Mumbai,West,Female,26,Sedentary,30.2618,Obese
+Subject-8052,Mumbai,West,Male,29,Non Sedentary,32.0513,Obese
+Subject-8053,Mumbai,West,Male,51,Sedentary,30.4688,Obese
+Subject-8054,Mumbai,West,Male,20,Sedentary,30.4832,Obese
+Subject-8055,Mumbai,West,Male,40,Sedentary,31.2394,Obese
+Subject-8056,Mumbai,West,Female,35,Sedentary,30.6293,Obese
+Subject-8057,Mumbai,West,Female,48,Sedentary,31.2175,Obese
+Subject-8058,Mumbai,West,Male,42,Sedentary,31.8287,Obese
+Subject-8059,Mumbai,West,Male,24,Sedentary,30.1103,Obese
+Subject-9001,Guwahati,East,Male,24,Non Sedentary,29.3413,Non-Obese
+Subject-9002,Guwahati,East,Male,20,Non Sedentary,32.0894,Obese
+Subject-9003,Guwahati,East,Male,25,Non Sedentary,25.1096,Non-Obese
+Subject-9004,Guwahati,East,Male,24,Non Sedentary,31.94,Obese
+Subject-9005,Guwahati,East,Male,29,Sedentary,31.3465,Obese
+Subject-9006,Guwahati,East,Female,30,Non Sedentary,20.5442,Non-Obese
+Subject-9007,Guwahati,East,Male,28,Sedentary,22.6563,Non-Obese
+Subject-9008,Guwahati,East,Male,35,Sedentary,34.4496,Obese
+Subject-9009,Guwahati,East,Male,22,Non Sedentary,28.0612,Non-Obese
+Subject-9010,Guwahati,East,Male,26,Non Sedentary,25.7778,Non-Obese
+Subject-9011,Guwahati,East,Female,25,Sedentary,25.1496,Non-Obese
+Subject-9012,Guwahati,East,Female,27,Non Sedentary,22.0317,Non-Obese
+Subject-9013,Guwahati,East,Male,29,Sedentary,28.4444,Non-Obese
+Subject-9014,Guwahati,East,Male,23,Sedentary,31.5301,Obese
+Subject-9015,Guwahati,East,Male,30,Sedentary,32.0461,Obese
+Subject-9016,Guwahati,East,Male,34,Non Sedentary,30.4438,Obese
+Subject-9017,Guwahati,East,Female,35,Sedentary,33.5938,Obese
+Subject-9018,Guwahati,East,Female,35,Sedentary,34.8944,Obese
+Subject-9019,Guwahati,East,Male,40,Non Sedentary,36.0344,Obese
+Subject-9020,Guwahati,East,Male,20,Non Sedentary,26.6667,Non-Obese
+Subject-9021,Guwahati,East,Male,58,Sedentary,34.049,Obese
+Subject-9022,Guwahati,East,Male,35,Non Sedentary,22.2222,Non-Obese
+Subject-9023,Guwahati,East,Male,35,Sedentary,31.1111,Obese
+Subject-9024,Guwahati,East,Female,40,Sedentary,19.5313,Non-Obese
+Subject-9025,Guwahati,East,Female,40,Sedentary,26.8889,Non-Obese
+Subject-9026,Guwahati,East,Female,40,Sedentary,29.6749,Non-Obese
+Subject-9027,Guwahati,East,Female,20,Non Sedentary,22.2222,Non-Obese
+Subject-9028,Guwahati,East,Male,52,Sedentary,29.7211,Non-Obese
+Subject-9029,Guwahati,East,Female,55,Sedentary,33.9526,Obese
+Subject-9030,Guwahati,East,Male,60,Sedentary,34.049,Obese
+Subject-9031,Guwahati,East,Male,58,Sedentary,29.7211,Non-Obese
+Subject-9032,Guwahati,East,Male,60,Sedentary,36.0519,Obese
+Subject-9033,Guwahati,East,Female,52,Non Sedentary,36.0344,Obese
+Subject-9034,Guwahati,East,Male,48,Sedentary,31.7723,Obese
+Subject-9035,Guwahati,East,Male,52,Sedentary,39.8438,Obese
+Subject-9036,Guwahati,East,Female,46,Sedentary,32.946,Obese
+Subject-9037,Guwahati,East,Male,46,Non Sedentary,37.7176,Obese
+Subject-9038,Guwahati,East,Male,23,Non Sedentary,31.3131,Obese
+Subject-9039,Guwahati,East,Male,20,Non Sedentary,21.8787,Non-Obese
+Subject-9040,Guwahati,East,Female,25,Non Sedentary,25.5102,Non-Obese
+Subject-9041,Guwahati,East,Male,22,Non Sedentary,28.8315,Non-Obese
+Subject-9042,Guwahati,East,Male,40,Non Sedentary,32.831,Obese
+Subject-9043,Guwahati,East,Male,42,Non Sedentary,34.2936,Obese
+Subject-9044,Guwahati,East,Male,35,Non Sedentary,35.0589,Obese
+Subject-9045,Guwahati,East,Female,40,Sedentary,33.2671,Obese
+Subject-9046,Guwahati,East,Female,35,Sedentary,32.0461,Obese
+Subject-9047,Guwahati,East,Female,25,Non Sedentary,30.0463,Obese
+Subject-9048,Guwahati,East,Female,40,Non Sedentary,31.1111,Obese
+Subject-9049,Guwahati,East,Male,38,Sedentary,31.9922,Obese
+Subject-9050,Guwahati,East,Female,40,Non Sedentary,30.6293,Obese
+Subject-9051,Guwahati,East,Male,20,Non Sedentary,28.0689,Non-Obese
+Subject-9052,Guwahati,East,Male,23,Non Sedentary,28.7641,Non-Obese
+Subject-9053,Guwahati,East,Male,20,Non Sedentary,28.9941,Non-Obese
+Subject-9054,Guwahati,East,Male,25,Non Sedentary,31.0543,Obese
+Subject-9055,Guwahati,East,Male,37,Non Sedentary,32.0459,Obese
+Subject-9056,Guwahati,East,Male,34,Non Sedentary,31.2295,Obese
+Subject-9057,Guwahati,East,Male,20,Non Sedentary,28.8805,Non-Obese
+Subject-9058,Guwahati,East,Male,24,Non Sedentary,29.3413,Non-Obese
+Subject-9059,Guwahati,East,Male,25,Non Sedentary,29.9307,Non-Obese
+Subject-9060,Guwahati,East,Male,23,Non Sedentary,28.8444,Non-Obese
+Subject-9061,Guwahati,East,Male,22,Non Sedentary,27.3852,Non-Obese
+Subject-9062,Guwahati,East,Male,62,Sedentary,35.0862,Obese
+Subject-9063,Guwahati,East,Male,30,Non Sedentary,31.2974,Obese
+Subject-9064,Guwahati,East,Male,26,Non Sedentary,29.7601,Non-Obese
+Subject-9065,Guwahati,East,Male,38,Sedentary,28.1479,Non-Obese
+Subject-9066,Guwahati,East,Male,32,Non Sedentary,28.7641,Non-Obese
+Subject-9067,Guwahati,East,Male,20,Non Sedentary,26.255,Non-Obese
+Subject-9068,Guwahati,East,Female,40,Non Sedentary,28.984,Non-Obese
+Subject-9069,Guwahati,East,Male,24,Non Sedentary,28.7641,Non-Obese
+Subject-9070,Guwahati,East,Male,21,Non Sedentary,28.9597,Non-Obese
+Subject-9071,Guwahati,East,Female,37,Non Sedentary,29.3968,Non-Obese
+Subject-9072,Guwahati,East,Male,28,Non Sedentary,26.255,Non-Obese
+Subject-9073,Guwahati,East,Male,30,Non Sedentary,28.1479,Non-Obese
+Subject-9074,Guwahati,East,Male,60,Sedentary,35.0862,Obese
+Subject-9075,Guwahati,East,Female,48,Sedentary,16.1078,Non-Obese
+Subject-9076,Guwahati,East,Male,35,Non Sedentary,31.1111,Obese
+Subject-9077,Guwahati,East,Male,38,Sedentary,32.3424,Obese
+Subject-9078,Guwahati,East,Male,40,Non Sedentary,31.1111,Obese
+Subject-9079,Guwahati,East,Female,48,Sedentary,31.0446,Obese
+Subject-9080,Guwahati,East,Male,35,Non Sedentary,31.1111,Obese
+Subject-9081,Guwahati,East,Male,33,Non Sedentary,29.7211,Non-Obese
+Subject-9082,Guwahati,East,Male,40,Non Sedentary,31.7723,Obese
+Subject-9083,Guwahati,East,Female,44,Non Sedentary,36.0344,Obese
+Subject-10001,Ludhiana,North,Male,61,Non Sedentary,22.0721,Non-Obese
+Subject-10002,Ludhiana,North,Male,37,Sedentary,36.8815,Obese
+Subject-10003,Ludhiana,North,Female,23,Non Sedentary,26.7001,Non-Obese
+Subject-10004,Ludhiana,North,Female,43,Sedentary,33.8627,Obese
+Subject-10005,Ludhiana,North,Male,39,Sedentary,23.3812,Non-Obese
+Subject-10006,Ludhiana,North,Male,23,Sedentary,32.4496,Obese
+Subject-10007,Ludhiana,North,Female,30,Sedentary,22.0888,Non-Obese
+Subject-10008,Ludhiana,North,Male,61,Sedentary,47.3612,Obese
+Subject-10009,Ludhiana,North,Male,37,Sedentary,21.7687,Non-Obese
+Subject-10010,Ludhiana,North,Female,50,Sedentary,30.812,Obese
+Subject-10011,Ludhiana,North,Female,45,Sedentary,24.2131,Non-Obese
+Subject-10012,Ludhiana,North,Female,35,Sedentary,14.8437,Non-Obese
+Subject-10013,Ludhiana,North,Female,25,Sedentary,25.3906,Non-Obese
+Subject-10014,Ludhiana,North,Male,50,Sedentary,24.2081,Non-Obese
+Subject-10015,Ludhiana,North,Female,40,Sedentary,32.8125,Obese
+Subject-10016,Ludhiana,North,Female,33,Sedentary,31.25,Obese
+Subject-10017,Ludhiana,North,Female,40,Sedentary,31.25,Obese
+Subject-10018,Ludhiana,North,Female,60,Sedentary,20.6667,Non-Obese
+Subject-10019,Ludhiana,North,Male,30,Sedentary,31.5417,Obese
+Subject-10020,Ludhiana,North,Female,21,Sedentary,19.1247,Non-Obese
+Subject-10021,Ludhiana,North,Female,30,Sedentary,31.0151,Obese
+Subject-10022,Ludhiana,North,Male,55,Sedentary,21.4773,Non-Obese
+Subject-10023,Ludhiana,North,Female,31,Sedentary,30.2343,Obese
+Subject-10024,Ludhiana,North,Female,25,Sedentary,31.0001,Obese
+Subject-10025,Ludhiana,North,Female,45,Sedentary,27.9963,Non-Obese
+Subject-10026,Ludhiana,North,Female,60,Sedentary,30.2959,Obese
+Subject-10027,Ludhiana,North,Female,55,Sedentary,24.6154,Non-Obese
+Subject-10028,Ludhiana,North,Male,57,Sedentary,30.6161,Obese
+Subject-10030,Ludhiana,North,Female,35,Sedentary,21.2242,Non-Obese
+Subject-10031,Ludhiana,North,Male,40,Sedentary,25.3137,Non-Obese
+Subject-10032,Ludhiana,North,Female,25,Sedentary,30.1389,Obese
+Subject-10033,Ludhiana,North,Female,48,Sedentary,24.5851,Non-Obese
+Subject-10034,Ludhiana,North,Male,38,Non Sedentary,30.6368,Obese
+Subject-10035,Ludhiana,North,Male,36,Sedentary,30.8463,Obese
+Subject-10036,Ludhiana,North,Male,35,Sedentary,27.611,Non-Obese
+Subject-10038,Ludhiana,North,Female,30,Sedentary,18.1552,Non-Obese
+Subject-10039,Ludhiana,North,Male,60,Sedentary,30.6374,Obese
+Subject-10040,Ludhiana,North,Female,48,Sedentary,31.0001,Obese
+Subject-10041,Ludhiana,North,Male,30,Sedentary,19.375,Non-Obese
+Subject-10042,Ludhiana,North,Male,35,Sedentary,41.2799,Obese
+Subject-10043,Ludhiana,North,Male,25,Sedentary,31.0001,Obese
+Subject-10044,Ludhiana,North,Female,49,Sedentary,31.0001,Obese
+Subject-10045,Ludhiana,North,Male,27,Non Sedentary,21.3601,Non-Obese
+Subject-10046,Ludhiana,North,Male,25,Sedentary,31.8522,Obese
+Subject-10047,Ludhiana,North,Male,38,Sedentary,31.2213,Obese
+Subject-10048,Ludhiana,North,Male,36,Sedentary,32.6905,Obese
+Subject-10049,Ludhiana,North,Male,39,Non Sedentary,31.6158,Obese
+Subject-10050,Ludhiana,North,Male,41,Sedentary,25.3444,Non-Obese
+Subject-10051,Ludhiana,North,Female,24,Sedentary,31.1634,Obese
+Subject-10052,Ludhiana,North,Male,28,Sedentary,20.2848,Non-Obese
+Subject-10053,Ludhiana,North,Male,58,Sedentary,24.093,Non-Obese
+Subject-10054,Ludhiana,North,Male,29,Sedentary,31.25,Obese
+Subject-10055,Ludhiana,North,Male,64,Sedentary,23.3887,Non-Obese
+Subject-10056,Ludhiana,North,Male,21,Non Sedentary,18.6998,Non-Obese
+Subject-10057,Ludhiana,North,Male,40,Sedentary,32.3232,Obese
+Subject-10058,Ludhiana,North,Male,38,Sedentary,24.6181,Non-Obese
+Subject-10059,Ludhiana,North,Female,60,Sedentary,32.8125,Obese
+Subject-10060,Ludhiana,North,Female,54,Sedentary,30.4867,Obese
+Subject-10061,Ludhiana,North,Male,30,Sedentary,24.6914,Non-Obese
+Subject-10062,Ludhiana,North,Female,56,Sedentary,38.5411,Obese
+Subject-10063,Ludhiana,North,Female,40,Sedentary,34.7078,Obese
+Subject-10064,Ludhiana,North,Female,60,Sedentary,32.4557,Obese
+Subject-10065,Ludhiana,North,Female,21,Sedentary,16.4474,Non-Obese
+Subject-10066,Ludhiana,North,Male,49,Sedentary,16.1616,Non-Obese
+Subject-10067,Ludhiana,North,Male,39,Sedentary,31.4879,Obese
+Subject-11001,Lucknow,North,Male,37,Sedentary,27.3356,Non-Obese
+Subject-11002,Lucknow,North,Male,31,Sedentary,30.4688,Obese
+Subject-11003,Lucknow,North,Male,53,Sedentary,31.2213,Obese
+Subject-11004,Lucknow,North,Male,34,Non Sedentary,30.1194,Obese
+Subject-11005,Lucknow,North,Female,32,Non Sedentary,31.245,Obese
+Subject-11006,Lucknow,North,Female,59,Sedentary,26.4792,Non-Obese
+Subject-11007,Lucknow,North,Male,29,Sedentary,21.4536,Non-Obese
+Subject-11008,Lucknow,North,Female,25,Non Sedentary,28.3594,Non-Obese
+Subject-11009,Lucknow,North,Female,26,Sedentary,30.4272,Obese
+Subject-11010,Lucknow,North,Male,32,Sedentary,22.4082,Non-Obese
+Subject-11011,Lucknow,North,Female,58,Sedentary,25.1096,Non-Obese
+Subject-11012,Lucknow,North,Male,38,Sedentary,28.6501,Non-Obese
+Subject-11013,Lucknow,North,Male,28,Non Sedentary,32.9287,Obese
+Subject-11014,Lucknow,North,Male,30,Sedentary,24.6152,Non-Obese
+Subject-11015,Lucknow,North,Female,55,Sedentary,36.0519,Obese
+Subject-11016,Lucknow,North,Male,22,Sedentary,33.7604,Obese
+Subject-11017,Lucknow,North,Male,25,Sedentary,32.3884,Obese
+Subject-11018,Lucknow,North,Female,45,Non Sedentary,32.0513,Obese
+Subject-11019,Lucknow,North,Male,35,Sedentary,35.1393,Obese
+Subject-11020,Lucknow,North,Male,32,Sedentary,24.841,Non-Obese
+Subject-11021,Lucknow,North,Female,30,Sedentary,31.6456,Obese
+Subject-11022,Lucknow,North,Male,36,Sedentary,21.048,Non-Obese
+Subject-11023,Lucknow,North,Male,31,Sedentary,30.4878,Obese
+Subject-11024,Lucknow,North,Male,38,Sedentary,31.1207,Obese
+Subject-11025,Lucknow,North,Male,58,Sedentary,34.1311,Obese
+Subject-11026,Lucknow,North,Male,33,Sedentary,31.2452,Obese
+Subject-11027,Lucknow,North,Female,55,Sedentary,25.204,Non-Obese
+Subject-11028,Lucknow,North,Female,42,Sedentary,38.8057,Obese
+Subject-11029,Lucknow,North,Female,26,Sedentary,18.2563,Non-Obese
+Subject-11030,Lucknow,North,Female,63,Sedentary,41.0884,Obese
+Subject-11031,Lucknow,North,Male,38,Sedentary,36.6285,Obese
+Subject-11032,Lucknow,North,Male,32,Non Sedentary,25.1039,Non-Obese
+Subject-11033,Lucknow,North,Male,35,Sedentary,29.4118,Non-Obese
+Subject-11034,Lucknow,North,Male,41,Sedentary,32.8824,Obese
+Subject-11035,Lucknow,North,Male,47,Non Sedentary,26.2976,Non-Obese
+Subject-11036,Lucknow,North,Female,28,Non Sedentary,26.8977,Non-Obese
+Subject-11037,Lucknow,North,Female,35,Sedentary,32.2357,Obese
+Subject-11038,Lucknow,North,Male,41,Sedentary,31.245,Obese
+Subject-11039,Lucknow,North,Male,26,Sedentary,27.0051,Non-Obese
+Subject-11040,Lucknow,North,Male,19,Non Sedentary,27.1106,Non-Obese
+Subject-11041,Lucknow,North,Female,57,Non Sedentary,24.653,Non-Obese
+Subject-11042,Lucknow,North,Male,60,Sedentary,25.565,Non-Obese
+Subject-11043,Lucknow,North,Female,35,Sedentary,34.1837,Obese
+Subject-11044,Lucknow,North,Male,37,Non Sedentary,33.2671,Obese
+Subject-11045,Lucknow,North,Male,21,Sedentary,36.738,Obese
+Subject-11046,Lucknow,North,Male,36,Sedentary,35.9954,Obese
+Subject-11047,Lucknow,North,Female,48,Sedentary,28.1943,Non-Obese
+Subject-11048,Lucknow,North,Male,25,Non Sedentary,21.6128,Non-Obese
+Subject-11049,Lucknow,North,Male,34,Sedentary,31.1614,Obese
+Subject-11050,Lucknow,North,Female,35,Sedentary,36.9822,Obese
+Subject-11051,Lucknow,North,Male,42,Non Sedentary,23.1481,Non-Obese
+Subject-11052,Lucknow,North,Male,40,Sedentary,31.6443,Obese
+Subject-11053,Lucknow,North,Male,20,Sedentary,20.7157,Non-Obese
+Subject-11054,Lucknow,North,Female,26,Sedentary,24.3007,Non-Obese
+Subject-11055,Lucknow,North,Female,49,Sedentary,34.7153,Obese
+Subject-11056,Lucknow,North,Male,36,Non Sedentary,33.9493,Obese
+Subject-11057,Lucknow,North,Female,36,Non Sedentary,16.937,Non-Obese
+Subject-11058,Lucknow,North,Female,39,Sedentary,28.4799,Non-Obese
+Subject-11059,Lucknow,North,Male,28,Sedentary,23.3067,Non-Obese
+Subject-11060,Lucknow,North,Male,36,Sedentary,33.7495,Obese
+Subject-11061,Lucknow,North,Female,30,Sedentary,35.4925,Obese
+Subject-11062,Lucknow,North,Male,47,Sedentary,31.1791,Obese
+Subject-11063,Lucknow,North,Male,38,Non Sedentary,33.6221,Obese
+Subject-11064,Lucknow,North,Female,33,Sedentary,21.3333,Non-Obese
+Subject-11065,Lucknow,North,Male,28,Non Sedentary,27.3923,Non-Obese
+Subject-11066,Lucknow,North,Male,35,Sedentary,35.693,Obese
+Subject-11067,Lucknow,North,Male,33,Sedentary,31.6406,Obese
+Subject-12001,Patna,East,Female,27,Sedentary,30.2978,Obese
+Subject-12002,Patna,East,Male,45,Sedentary,28.3737,Non-Obese
+Subject-12003,Patna,East,Female,24,Sedentary,24.4561,Non-Obese
+Subject-12004,Patna,East,Female,38,Sedentary,25.3906,Non-Obese
+Subject-12005,Patna,East,Male,48,Sedentary,26.2976,Non-Obese
+Subject-12006,Patna,East,Female,32,Sedentary,29.0006,Non-Obese
+Subject-12007,Patna,East,Female,28,Sedentary,27.268,Non-Obese
+Subject-12008,Patna,East,Female,22,Sedentary,25.3333,Non-Obese
+Subject-12009,Patna,East,Male,39,Sedentary,26.9896,Non-Obese
+Subject-12010,Patna,East,Female,37,Sedentary,25.7778,Non-Obese
+Subject-12011,Patna,East,Female,40,Sedentary,26.7229,Non-Obese
+Subject-12012,Patna,East,Male,40,Sedentary,27.852,Non-Obese
+Subject-12013,Patna,East,Male,26,Sedentary,25.2163,Non-Obese
+Subject-12014,Patna,East,Male,24,Sedentary,25.4028,Non-Obese
+Subject-12015,Patna,East,Male,35,Sedentary,26.8386,Non-Obese
+Subject-12016,Patna,East,Male,38,Sedentary,27.2817,Non-Obese
+Subject-12017,Patna,East,Male,36,Sedentary,33.6327,Obese
+Subject-12018,Patna,East,Female,33,Sedentary,31.2213,Obese
+Subject-12019,Patna,East,Male,34,Sedentary,33.4622,Obese
+Subject-12020,Patna,East,Male,34,Sedentary,34.8944,Obese
+Subject-12021,Patna,East,Female,30,Sedentary,34.8944,Obese
+Subject-12022,Patna,East,Female,44,Sedentary,27.3438,Non-Obese
+Subject-12023,Patna,East,Male,35,Sedentary,27.0416,Non-Obese
+Subject-12024,Patna,East,Male,54,Sedentary,33.6327,Obese
+Subject-12025,Patna,East,Male,40,Sedentary,31.1419,Obese
+Subject-12026,Patna,East,Female,32,Sedentary,34.6021,Obese
+Subject-12027,Patna,East,Male,28,Sedentary,28.0557,Non-Obese
+Subject-12028,Patna,East,Male,52,Sedentary,32.1466,Obese
+Subject-12029,Patna,East,Female,38,Sedentary,30.4832,Obese
+Subject-12030,Patna,East,Female,32,Sedentary,33.0904,Obese
+Subject-12031,Patna,East,Male,35,Sedentary,27.6817,Non-Obese
+Subject-12032,Patna,East,Male,48,Sedentary,34.5776,Obese
+Subject-12033,Patna,East,Male,34,Sedentary,31.6032,Obese
+Subject-12034,Patna,East,Male,40,Sedentary,31.1951,Obese
+Subject-12035,Patna,East,Male,58,Sedentary,32.2708,Obese
+Subject-12036,Patna,East,Male,41,Sedentary,34.375,Obese
+Subject-12037,Patna,East,Male,65,Sedentary,36.1323,Obese
+Subject-12038,Patna,East,Female,50,Sedentary,35.693,Obese
+Subject-12039,Patna,East,Male,54,Sedentary,30.1038,Obese
+Subject-12040,Patna,East,Female,52,Sedentary,36.3636,Obese
+Subject-12041,Patna,East,Male,35,Sedentary,35.2653,Obese
+Subject-12042,Patna,East,Female,65,Sedentary,32.3884,Obese
+Subject-12043,Patna,East,Female,42,Sedentary,27.4714,Non-Obese
+Subject-12044,Patna,East,Male,44,Sedentary,30.0712,Obese
+Subject-12045,Patna,East,Male,26,Sedentary,25.3444,Non-Obese
+Subject-12046,Patna,East,Male,53,Sedentary,33.4622,Obese
+Subject-12047,Patna,East,Male,25,Sedentary,26.0933,Non-Obese
+Subject-12048,Patna,East,Male,40,Sedentary,30.4867,Obese
+Subject-12049,Patna,East,Male,35,Sedentary,32.2831,Obese
+Subject-12050,Patna,East,Female,40,Sedentary,30.1103,Obese
+Subject-12051,Patna,East,Female,48,Sedentary,27.3438,Non-Obese
+Subject-12052,Patna,East,Female,44,Sedentary,32.8731,Obese
+Subject-12053,Patna,East,Female,38,Sedentary,30.863,Obese
+Subject-12054,Patna,East,Male,32,Sedentary,24.3375,Non-Obese
+Subject-12055,Patna,East,Male,40,Sedentary,31.5115,Obese
+Subject-12056,Patna,East,Male,31,Sedentary,26.5731,Non-Obese
+Subject-12057,Patna,East,Male,65,Sedentary,27.1605,Non-Obese
+Subject-12058,Patna,East,Male,47,Sedentary,24.623,Non-Obese
+Subject-12059,Patna,East,Female,28,Sedentary,28.0102,Non-Obese
+Subject-12060,Patna,East,Male,42,Sedentary,31.4815,Obese
+Subject-12061,Patna,East,Female,41,Sedentary,30.4832,Obese
+Subject-12062,Patna,East,Female,28,Sedentary,32.8933,Obese
+Subject-12063,Patna,East,Male,50,Sedentary,30.0408,Obese
+Subject-12064,Patna,East,Male,49,Sedentary,27.2173,Non-Obese
+Subject-12065,Patna,East,Male,30,Sedentary,30.0712,Obese
+Subject-12066,Patna,East,Female,39,Sedentary,30.0781,Obese
+Subject-12067,Patna,East,Male,49,Sedentary,25.0995,Non-Obese
+Subject-12068,Patna,East,Female,34,Sedentary,32.2421,Obese
+Subject-12069,Patna,East,Female,22,Sedentary,31.1111,Obese
+Subject-12070,Patna,East,Male,29,Sedentary,26.2976,Non-Obese
+Subject-12071,Patna,East,Male,27,Sedentary,27.6817,Non-Obese
+Subject-12072,Patna,East,Male,48,Sedentary,26.0262,Non-Obese
+Subject-12073,Patna,East,Female,26,Sedentary,22.0386,Non-Obese
+Subject-12074,Patna,East,Male,41,Sedentary,31.378,Obese
+Subject-12075,Patna,East,Female,28,Sedentary,32.039,Obese
+Subject-12076,Patna,East,Male,52,Sedentary,30.0712,Obese
+Subject-12077,Patna,East,Male,18,Sedentary,18.3391,Non-Obese
+Subject-12078,Patna,East,Female,36,Sedentary,30.4688,Obese
+Subject-12079,Patna,East,Male,26,Sedentary,25.0593,Non-Obese
+Subject-12080,Patna,East,Male,28,Sedentary,31.0979,Obese
+Subject-12081,Patna,East,Female,55,Sedentary,30.4688,Obese
+Subject-12082,Patna,East,Male,40,Sedentary,30.3673,Obese
+Subject-12083,Patna,East,Male,60,Sedentary,31.2213,Obese
+Subject-13001,New Delhi,North,Female,20,Non Sedentary,19.3698,Non-Obese
+Subject-13002,New Delhi,North,Female,21,Sedentary,16.6009,Non-Obese
+Subject-13003,New Delhi,North,Male,33,Sedentary,33.9506,Obese
+Subject-13004,New Delhi,North,Male,25,Sedentary,25.8121,Non-Obese
+Subject-13005,New Delhi,North,Female,36,Sedentary,30.0821,Obese
+Subject-13006,New Delhi,North,Male,19,Non Sedentary,25.1241,Non-Obese
+Subject-13007,New Delhi,North,Male,63,Sedentary,31.2072,Obese
+Subject-13008,New Delhi,North,Female,59,Sedentary,33.045,Obese
+Subject-13009,New Delhi,North,Female,35,Sedentary,30.863,Obese
+Subject-13010,New Delhi,North,Female,22,Non Sedentary,20.1818,Non-Obese
+Subject-13011,New Delhi,North,Female,50,Non Sedentary,23.9715,Non-Obese
+Subject-13012,New Delhi,North,Male,60,Non Sedentary,27.3588,Non-Obese
+Subject-13013,New Delhi,North,Male,20,Non Sedentary,24.7967,Non-Obese
+Subject-13014,New Delhi,North,Male,28,Sedentary,31.0204,Obese
+Subject-13015,New Delhi,North,Female,30,Sedentary,32.4557,Obese
+Subject-13016,New Delhi,North,Male,45,Non Sedentary,26.6881,Non-Obese
+Subject-13017,New Delhi,North,Female,40,Sedentary,26.2031,Non-Obese
+Subject-13018,New Delhi,North,Female,40,Sedentary,27.4473,Non-Obese
+Subject-13019,New Delhi,North,Male,29,Sedentary,31.949,Obese
+Subject-13020,New Delhi,North,Male,30,Sedentary,31.6327,Obese
+Subject-13021,New Delhi,North,Male,43,Non Sedentary,26.2164,Non-Obese
+Subject-13022,New Delhi,North,Male,42,Sedentary,28.1531,Non-Obese
+Subject-13023,New Delhi,North,Male,18,Sedentary,21.5278,Non-Obese
+Subject-13024,New Delhi,North,Female,23,Sedentary,21.4844,Non-Obese
+Subject-13025,New Delhi,North,Male,19,Sedentary,21.6049,Non-Obese
+Subject-13026,New Delhi,North,Female,20,Sedentary,17.1468,Non-Obese
+Subject-13027,New Delhi,North,Male,60,Sedentary,32.4557,Obese
+Subject-13028,New Delhi,North,Female,50,Sedentary,26.3702,Non-Obese
+Subject-13029,New Delhi,North,Female,56,Sedentary,31.2175,Obese
+Subject-13030,New Delhi,North,Female,37,Sedentary,32.4557,Obese
+Subject-13031,New Delhi,North,Female,41,Non Sedentary,20.1092,Non-Obese
+Subject-13032,New Delhi,North,Male,41,Non Sedentary,20.1092,Non-Obese
+Subject-13033,New Delhi,North,Female,18,Non Sedentary,20.2442,Non-Obese
+Subject-13034,New Delhi,North,Male,40,Sedentary,33.0579,Obese
+Subject-13035,New Delhi,North,Male,24,Sedentary,23.8751,Non-Obese
+Subject-13036,New Delhi,North,Male,20,Non Sedentary,23.03,Non-Obese
+Subject-13037,New Delhi,North,Male,22,Non Sedentary,27.5482,Non-Obese
+Subject-13038,New Delhi,North,Male,29,Non Sedentary,29.0318,Non-Obese
+Subject-13039,New Delhi,North,Male,30,Sedentary,30.8112,Obese
+Subject-13040,New Delhi,North,Female,18,Sedentary,34.1749,Obese
+Subject-13041,New Delhi,North,Male,49,Non Sedentary,31.2213,Obese
+Subject-13042,New Delhi,North,Female,18,Non Sedentary,29.9688,Non-Obese
+Subject-13043,New Delhi,North,Female,35,Sedentary,28.578,Non-Obese
+Subject-13044,New Delhi,North,Female,21,Non Sedentary,22.0386,Non-Obese
+Subject-13045,New Delhi,North,Male,18,Non Sedentary,19.052,Non-Obese
+Subject-13046,New Delhi,North,Female,32,Sedentary,40.2696,Obese
+Subject-14001,Kolkata,East,Female,44,Non Sedentary,28.5075,Non-Obese
+Subject-14002,Kolkata,East,Male,41,Non Sedentary,32.4557,Obese
+Subject-14003,Kolkata,East,Female,56,Non Sedentary,27.0552,Non-Obese
+Subject-14004,Kolkata,East,Female,62,Non Sedentary,20.8889,Non-Obese
+Subject-14005,Kolkata,East,Female,57,Non Sedentary,25.3906,Non-Obese
+Subject-14006,Kolkata,East,Female,37,Non Sedentary,25.9107,Non-Obese
+Subject-14007,Kolkata,East,Female,55,Non Sedentary,30.8185,Obese
+Subject-14008,Kolkata,East,Male,56,Non Sedentary,21.8549,Non-Obese
+Subject-14009,Kolkata,East,Male,36,Non Sedentary,19.0311,Non-Obese
+Subject-14010,Kolkata,East,Female,56,Non Sedentary,16.2331,Non-Obese
+Subject-14011,Kolkata,East,Female,30,Non Sedentary,27.0721,Non-Obese
+Subject-14012,Kolkata,East,Male,50,Non Sedentary,27.5482,Non-Obese
+Subject-14013,Kolkata,East,Male,65,Non Sedentary,33.3333,Obese
+Subject-14014,Kolkata,East,Female,28,Non Sedentary,31.1111,Obese
+Subject-14015,Kolkata,East,Female,59,Non Sedentary,25.7117,Non-Obese
+Subject-14016,Kolkata,East,Male,40,Non Sedentary,22.3945,Non-Obese
+Subject-14017,Kolkata,East,Male,39,Non Sedentary,36.9822,Obese
+Subject-14018,Kolkata,East,Male,45,Non Sedentary,31.25,Obese
+Subject-14019,Kolkata,East,Female,34,Non Sedentary,27.5862,Non-Obese
+Subject-14020,Kolkata,East,Female,33,Non Sedentary,31.6889,Obese
+Subject-14021,Kolkata,East,Female,49,Non Sedentary,37.5924,Obese
+Subject-14022,Kolkata,East,Female,50,Non Sedentary,31.1634,Obese
+Subject-14023,Kolkata,East,Female,55,Non Sedentary,34.6667,Obese
+Subject-14024,Kolkata,East,Male,39,Non Sedentary,23.1111,Non-Obese
+Subject-14025,Kolkata,East,Male,18,Non Sedentary,25.5593,Non-Obese
+Subject-14026,Kolkata,East,Female,21,Non Sedentary,30.7692,Obese
+Subject-14027,Kolkata,East,Female,39,Non Sedentary,31.1846,Obese
+Subject-14028,Kolkata,East,Male,42,Non Sedentary,30.4688,Obese
+Subject-14029,Kolkata,East,Female,32,Non Sedentary,34.2403,Obese
+Subject-14030,Kolkata,East,Male,40,Non Sedentary,23.5883,Non-Obese
+Subject-14031,Kolkata,East,Male,20,Non Sedentary,20.5693,Non-Obese
+Subject-14032,Kolkata,East,Female,38,Non Sedentary,20.2562,Non-Obese
+Subject-14033,Kolkata,East,Female,30,Sedentary,33.3108,Obese
+Subject-14034,Kolkata,East,Male,35,Non Sedentary,26.7148,Non-Obese
+Subject-14035,Kolkata,East,Female,40,Non Sedentary,23.0177,Non-Obese
+Subject-14036,Kolkata,East,Male,29,Non Sedentary,25.1712,Non-Obese
+Subject-14037,Kolkata,East,Female,18,Non Sedentary,21.1702,Non-Obese
+Subject-14038,Kolkata,East,Male,30,Non Sedentary,30.1166,Obese
+Subject-14039,Kolkata,East,Female,23,Sedentary,35.5601,Obese
+Subject-14040,Kolkata,East,Female,43,Non Sedentary,30.1741,Obese
+Subject-14041,Kolkata,East,Male,46,Non Sedentary,20.1872,Non-Obese
+Subject-14042,Kolkata,East,Male,37,Non Sedentary,22.8838,Non-Obese
+Subject-14043,Kolkata,East,Female,21,Non Sedentary,32.7556,Obese
+Subject-14044,Kolkata,East,Male,43,Non Sedentary,31.0763,Obese
+Subject-14045,Kolkata,East,Female,49,Non Sedentary,32.9778,Obese
+Subject-14046,Kolkata,East,Male,39,Non Sedentary,31.3672,Obese
+Subject-14047,Kolkata,East,Male,29,Non Sedentary,27.5482,Non-Obese
+Subject-14048,Kolkata,East,Female,27,Non Sedentary,25.8876,Non-Obese
+Subject-14049,Kolkata,East,Male,35,Non Sedentary,33.0905,Obese
+Subject-14050,Kolkata,East,Male,30,Non Sedentary,33.0579,Obese
+Subject-14051,Kolkata,East,Female,33,Non Sedentary,31.5609,Obese
+Subject-14052,Kolkata,East,Female,51,Non Sedentary,30.5688,Obese
+Subject-14053,Kolkata,East,Female,45,Non Sedentary,32.1748,Obese
+Subject-14054,Kolkata,East,Female,19,Non Sedentary,31.0889,Obese
+Subject-14055,Kolkata,East,Male,19,Non Sedentary,20.5625,Non-Obese
+Subject-14056,Kolkata,East,Female,41,Non Sedentary,28.1337,Non-Obese
+Subject-14057,Kolkata,East,Male,31,Non Sedentary,33.168,Obese
+Subject-14058,Kolkata,East,Male,56,Non Sedentary,22.2957,Non-Obese
+Subject-14059,Kolkata,East,Male,45,Non Sedentary,32.5952,Obese
+Subject-14060,Kolkata,East,Male,45,Non Sedentary,26.6772,Non-Obese
+Subject-14061,Kolkata,East,Female,38,Non Sedentary,28.4444,Non-Obese
+Subject-14062,Kolkata,East,Female,36,Non Sedentary,34.1797,Obese
+Subject-14063,Kolkata,East,Female,58,Non Sedentary,30.0833,Obese
+Subject-14064,Kolkata,East,Male,32,Non Sedentary,31.1964,Obese
+Subject-14065,Kolkata,East,Male,53,Sedentary,34.0895,Obese
+Subject-14066,Kolkata,East,Male,26,Non Sedentary,27.2173,Non-Obese
+Subject-14067,Kolkata,East,Female,37,Non Sedentary,33.3632,Obese
+Subject-14068,Kolkata,East,Male,34,Non Sedentary,32.5669,Obese
+Subject-14069,Kolkata,East,Male,58,Non Sedentary,30.0889,Obese
+Subject-14070,Kolkata,East,Female,36,Non Sedentary,33.5341,Obese
+Subject-14071,Kolkata,East,Female,52,Sedentary,35.7925,Obese
+Subject-14072,Kolkata,East,Male,31,Non Sedentary,27.2628,Non-Obese
+Subject-14073,Kolkata,East,Female,37,Non Sedentary,24.7796,Non-Obese
+Subject-14074,Kolkata,East,Male,35,Non Sedentary,31.1846,Obese
+Subject-14075,Kolkata,East,Male,32,Non Sedentary,31.5895,Obese
+Subject-14076,Kolkata,East,Female,41,Non Sedentary,32.1477,Obese
+Subject-14077,Kolkata,East,Female,23,Non Sedentary,31.7694,Obese
+Subject-14078,Kolkata,East,Male,18,Non Sedentary,22.8928,Non-Obese
+Subject-14079,Kolkata,East,Male,18,Non Sedentary,23.4952,Non-Obese
+Subject-14080,Kolkata,East,Male,38,Non Sedentary,31.6797,Obese
+Subject-14081,Kolkata,East,Female,34,Non Sedentary,32.8933,Obese
+Subject-14082,Kolkata,East,Female,19,Non Sedentary,32.039,Obese
+Subject-14083,Kolkata,East,Female,39,Non Sedentary,36.8889,Obese
+Subject-14084,Kolkata,East,Male,42,Non Sedentary,28.9341,Non-Obese
