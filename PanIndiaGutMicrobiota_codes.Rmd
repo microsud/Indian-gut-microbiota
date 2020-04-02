@@ -1,0 +1,994 @@
+---
+title: "Gut microbiota features of the geographically diverse Indian population"
+author: "Sudarshan Shetty"
+date: "November 12, 2018"
+output: html_document
+---
+
+# Load libraries  
+```{r, message=FALSE, warning=FALSE}
+
+library(microbiome)
+library(phyloseq)
+library(microbiomeutilities)
+library(ggpubr)
+library(RColorBrewer)
+library(vegan)
+
+```
+
+
+
+```{r}
+
+#ps0 <-read_phyloseq(otu.file = "./pseq_input/pan_otutab.csv",
+#                    taxonomy.file = "./pseq_input/pan_taxonomy.csv",
+#                    metadata.file = "./pseq_input/pan_meta.csv",
+#                    type = "simple")
+
+#unique(tax_table(ps0)[,1])
+
+```
+
+
+```{r}
+#ps0 <- remove_samples("Subject-8032",ps0)
+#ps0
+#rank_names(ps0)
+
+```
+
+
+```{r}
+
+#saveRDS(ps0, "ps0.rds")
+#rich <- plot_richness()
+ps0 <- readRDS("ps0.rds")
+
+head(meta(ps0))
+
+ps0.h <- subset_samples(ps0, Obese.Non.Obese != "Obese")
+rank_names(ps0.h)
+```
+
+
+
+# Figure 1 
+
+Phylum Level:  
+Figure 1: Comparison of relative abundances of major phyla in the gut microbiota of Indians. The p-values were calculated using Wilcoxon test.  
+
+```{r}
+
+ps0.phy <- aggregate_taxa(ps0, "Phylum", top = 6)
+
+metadf1 <- meta(ps0.phy)
+# create comaprision
+lev1 <- levels(metadf1$Geographical.zone.in.India) # get the variables
+
+# make a pairwise list that we want to compare.
+L.pairs1 <- combn(seq_along(lev1), 2, simplify = FALSE, FUN = function(i)lev1[i])
+
+ps0_ldf <- phy_to_ldf(ps0.phy, transform.counts =  NULL)
+
+ps0_ldf.sub <- subset(ps0_ldf, OTU != "Other")
+ps0_ldf.sub2 <- subset(ps0_ldf.sub, Obese.Non.Obese != "Obese")
+
+px2 <- ggboxplot(ps0_ldf.sub2, x = "Geographical.zone.in.India", y = "Abundance", 
+                 #add = "dotplot", 
+                 fill = "Geographical.zone.in.India", 
+                 palette = c("#e41a1c", "#377eb8", "#4daf4a","#984ea3"), 
+                 facet.by = "OTU", 
+                 legend = "NULL",
+                 ylab = "Relative abundance (Log10)") + stat_compare_means(comparisons = L.pairs1) + scale_y_log10() + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+px2
+ggsave("./figures/figure 1 top phyla.pdf", height = 10, width = 12)
+ggsave("./figures/figure 1 top phyla.png", height = 10, width = 12)
+
+```
+
+
+# Figure 2  
+
+Figure 2: Inter-individual variation in relative abundance of top 10 gut microbial genera in subject from different geographical zones in India.  
+
+```{r}
+
+#tab <- inequality(ps0)
+
+taxic <- as.data.frame(ps0@tax_table)  # this will help in setting large color options
+
+
+taxic$OTU <- rownames(taxic)  # Add the OTU ids from OTU table into the taxa table at the end.
+colnames(taxic)  # Y
+
+ps0.h.lev <- ps0
+
+taxmat <- as.matrix(taxic)  # convert it into a matrix.
+new.tax <- tax_table(taxmat)  # convert into phyloseq compatible file.
+tax_table(ps0.h.lev) <- new.tax  # incroporate into phyloseq Object
+
+ps0.h.levf <- format_phyloseq(ps0.h.lev)
+
+colnames(tax_table(ps0.h.levf)) <- c("Phylum",  "Class",   "Order",   "Family",  "Genus",   "Species", "OTU")
+
+ps1.com.fam <- microbiome::aggregate_taxa(ps0.h.levf, "Genus", top = 25)
+
+#colourCount = length(unique(taxic$Family))  #define number of variable colors based on number of Family (change the level accordingly to phylum/class/order)
+#getPalette = colorRampPalette(brewer.pal(12, "Paired"))  # change the palette as well as the number of colors will change according to palette.
+
+
+guide_italics <- guides(fill = guide_legend(label.theme = element_text(size = 15, 
+    face = "italic", colour = "Black", angle = 0)))
+
+plot.composition.relAbun <- plot_composition(ps1.com.fam, 
+                                             sample.sort = "Geographical.Location", 
+                                             x.label = "Geographical.zone.in.India") + theme(legend.position = "bottom") + scale_fill_brewer("Genus", palette = "Paired") + theme_bw() + 
+    theme(axis.text.x = element_text(angle = 90)) + 
+  ggtitle("Relative abundance") + guide_italics + theme(legend.title = element_text(size=18))
+  
+
+data.com <- plot.composition.relAbun$data
+colnames(data.com)
+p.heat <- ggplot(data.com, aes(x = Sample, y = OTU)) + geom_tile(aes(fill = Abundance)) 
+
+# Change color
+p.heat <- p.heat + scale_fill_distiller("Abundance", palette = "RdYlBu") + theme_bw() 
+
+# Make bacterial names italics
+p.heat <- p.heat + theme(axis.text.y = element_text(colour = 'black', 
+                                                    size = 10, 
+                                                    face = 'italic')) 
+# Make seperate samples based on main varaible
+p.heat <- p.heat + facet_grid(~xlabel, 
+                              scales = "free") + rremove("x.text") 
+
+p.heat <- p.heat + ylab("Taxa")
+
+#Clean the x-axis
+p.heat <- p.heat + theme(axis.title.x=element_blank(),
+                     axis.text.x=element_blank(),
+                     axis.ticks.x=element_blank()) 
+
+# Clean the facet label box
+p.heat <- p.heat + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+
+print(p.heat)
+
+#dir.create("figures")
+
+ggsave("./figures/Figure 2 Genus_heatmap.pdf", height = 6, width = 8)
+ggsave("./figures/Figure 2 Genus_heatmap.tiff", height = 6, width = 8)
+ggsave("./figures/Figure 2 Genus_heatmap.png", height = 6, width = 8)
+
+```
+
+
+# Figure 3  
+
+Figure 3: Principal coordinates analysis (PCoA) based on Bray-Curtis dissimilarity based on OTU relative abundances.   
+```{r}
+
+ps0.f <- format_to_besthit(ps0)
+
+pan.ord.mds.otu <- ordinate(ps0.f, "MDS", "bray")
+
+myPalette <- colorRampPalette(rev(brewer.pal(11, "Set1")))
+
+sc.man <- scale_colour_manual(values = myPalette(14))
+
+p_pan_otu <- plot_ordination(ps0.f, pan.ord.mds.otu, type = "samples", color = "Geographical.Location", shape = "Geographical.zone.in.India")
+
+p_pan_otu <- p_pan_otu + sc.man + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) #+ theme(legend.position="bottom")
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+p_pan_otu
+
+ggsave("./figures/Figure 3 pan_otu_all.pdf", height = 6, width = 10)
+ggsave("./figures/Figure 3 pan_otu_all.tiff", height = 6, width = 10)
+ggsave("./figures/Figure 3 pan_otu_all.png", height = 6, width = 10)
+
+
+```
+
+# permanova  
+
+```{r}
+
+summary(taxa_sums(ps0))
+ps0.fil <- core(ps0, 0.00001, 0.05)
+ps0.ord.mds <- metaMDS(t(abundances(ps0.fil)), k=3)
+
+#ps0.ord.mds <- ordinate(ps0, "MDS", "bray")
+
+fit <- envfit(ps0.ord.mds, meta(ps0.fil), perm = 999)
+
+scores(fit, "vectors")
+plot(ps0.ord.mds)
+plot.envfit(fit)
+
+set.seed(9795769)
+
+ps0.otu <- abundances(ps0.f)
+ps0.metadf <- meta(ps0.f)
+permanova.obnob <- adonis(t(ps0.otu) ~ Obese.Non.Obese,
+               data = ps0.metadf, permutations=999, method = "bray")
+permanova.obnob
+# P-value
+print(as.data.frame(permanova.obnob$aov.tab)["Obese.Non.Obese", "Pr(>F)"])
+dist <- vegdist(t(ps0.otu))
+anova(betadisper(dist, ps0.metadf$Obese.Non.Obese))
+# 0.57
+# Geographical.Location
+# Geographical.zone.in.India
+# Gender
+# AGE..in.years
+# Life.style.pattern
+# BMI
+permanova.city <- adonis(t(ps0.otu) ~ Geographical.Location,
+               data = ps0.metadf, permutations=999, method = "bray")
+
+# P-value
+permanova.city
+
+coef <- coefficients(permanova.city)["Geographical.Location2",]
+top.coef <- coef[rev(order(abs(coef)))[1:20]]
+par(mar = c(3, 14, 2, 1))
+barplot(sort(top.coef), horiz = T, las = 1, main = "Top taxa")
+
+
+
+permanova.zone <- adonis(t(ps0.otu) ~ Geographical.zone.in.India,
+               data = ps0.metadf, permutations=999, method = "bray")
+
+# P-value
+permanova.zone
+
+
+permanova.gener <- adonis(t(ps0.otu) ~ Gender,
+               data = ps0.metadf, permutations=999, method = "bray")
+
+# P-value
+permanova.gener
+
+
+permanova.Life.style.pattern <- adonis(t(ps0.otu) ~ Life.style.pattern,
+               data = ps0.metadf, permutations=999, method = "bray")
+
+# P-value
+permanova.Life.style.pattern
+```
+
+# perdisp 
+
+```{r}
+
+bray.dist <- phyloseq::distance(ps0.occ, "bray")
+
+ps0.otu <- abundances(ps0.occ)
+ps0.metadf <- meta(ps0.occ)
+
+
+Obese.Non.Obese.disp <- anova(betadisper(bray.dist, ps0.metadf$Obese.Non.Obese))
+Obese.Non.Obese.disp 
+boxplot(betadisper(bray.dist, ps0.metadf$Obese.Non.Obese))
+
+Geographical.Location.disp <- anova(betadisper(bray.dist, ps0.metadf$Geographical.Location))
+Geographical.Location.disp
+boxplot(betadisper(bray.dist, ps0.metadf$Geographical.Location), las = 2)
+plot(betadisper(bray.dist, ps0.metadf$Geographical.Location))
+
+Geographical.zone.in.India.disp <- anova(betadisper(bray.dist, ps0.metadf$Geographical.zone.in.India))
+Geographical.zone.in.India.disp
+
+Gender.disp <- anova(betadisper(bray.dist, ps0.metadf$Gender))
+Gender.disp
+
+Life.style.pattern.disp <- anova(betadisper(bray.dist, ps0.metadf$Life.style.pattern))
+Life.style.pattern.disp
+
+
+
+```
+
+#Figure 4  
+
+Figure 4: Occupancy-Abundance relationship for OTUs from major phyla in the Indian gut microbiota (n=1003). The x-axis is log transformed for clarity.  
+
+Occupancy test  
+
+```{r}
+
+#p <- plot_taxa_prevalence(ps0.h.lev, 'Phylum', detection = 0)
+#print(p)
+
+```
+
+
+
+```{r}
+
+ps0.occ <- format_to_besthit(ps0)
+colnames(tax_table(ps0.occ)) <- c("Phylum", "Class", "Order", "Family", "Genus", "Species", "OTUID","best_hit")
+otu.abun = apply(otu_table(ps0.occ),1,mean)
+head(tax_table(ps0))
+# Calculate the frequency of each OTU across all samples
+# 
+otu.freq = rowSums(otu_table(ps0.occ) != 0)/nsamples(ps0.occ)
+
+# Reassign names of phyla so we only color by the top 5 phyla and mark all others as "other"
+phyla = as.vector(data.frame(tax_table(ps0.occ))$Phylum)
+
+levels(phyla) = c(levels(phyla),"other")
+#
+keephyla = c("Actinobacteria","Bacteroidetes","Firmicutes","Proteobacteria","Verrucomicrobia", "Spirochaetes")
+
+phyla[!(phyla %in% keephyla)] = "Other"
+
+phyla = as.vector(phyla)
+
+phyla=as.factor(phyla)
+
+
+otuabun = data.frame(abundance=log(otu.abun),frequency=otu.freq,phyla)
+#fo saving rel abun
+otuabun2 = data.frame(abundance=otu.abun,frequency=otu.freq,phyla)
+write.csv(otuabun2, "occup-abund.csv")
+
+# Use color brewer to pick a color scheme for the phyla
+brew = brewer.pal(7, "Paired")
+
+# Create a scatterplot of OTUs showing their average relative abundance and frequency 
+# This plot shows how rare and abundant OTUs are distributed across the
+# your study.
+
+p.occ <- ggplot(otuabun, aes(x=abundance,y=frequency)) + geom_point(aes(size = frequency), shape = 1, alpha = 0.9) +
+    xlab("Average relative abundance (log scale)") + 
+    ylab("OTU Frequency") + facet_wrap(~phyla) +
+    theme_bw() +
+    theme(
+        plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=10)
+    ) + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+	
+p.occ
+
+ggsave("./figures/Figure 4 Occupancy_all.pdf", height = 4, width = 8)
+ggsave("./figures/Figure 4 Occupancy_all.tiff", height = 4, width = 8)
+ggsave("./figures/Figure 4 Occupancy_all.png", height = 4, width = 8)
+```
+
+
+
+# Figure 6  
+
+**Prevotell/Bacteroides**   
+
+The codes for this analysis were modified from [Gorvitovskaia et al., 2016](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-016-0160-7)  
+
+Figure 6: Principal coordinates analysis based on Bray-Curtis dissimilarity based on genus level relative abundances. A] PCoA depicting the gradient of Prevotella/Bacteroides ratio and distribution of body mass index (BMI) in 1003 Indian subjects. B] Same PCoA as in panel A, but coloured and facetted for depicting the distribution of Prevotella/Bacteroides ratio in the Indian gut microbiota in different geographical zones (East, n = 250; North, n = 243; South, n = 250; West, n = 260).  
+
+```{r}
+
+ps0.fv <- format_phyloseq(ps0)
+head(tax_table(ps0.fv))
+
+colnames(tax_table(ps0.fv)) <- c("Phylum",  "Class",   "Order",   "Family",  "Genus",   "Species", "OTU")
+
+ps0.gen.all <- microbiome::aggregate_taxa(ps0.fv, "Genus")
+
+relab2 <- abundances(ps0.gen.all)
+
+#Finding the Prevotella dominated samples in a given matrix
+findPrevoDom <- function(theMatrix) {
+  y <- apply(theMatrix, 2, function(x) {order(x, decreasing=TRUE)[1] == grep("Prevotella", rownames(theMatrix), perl=TRUE)})
+  return(theMatrix[,y])
+}
+
+#Finding the Bacteroides dominated samples in a given matrix
+findBacteDom <- function(theMatrix) {
+  y <- apply(theMatrix, 2, function(x) {order(x, decreasing=TRUE)[1] == grep("Bacteroides", rownames(theMatrix), perl=TRUE)})
+  return(theMatrix[,y])
+}
+
+pDom <- colnames(findPrevoDom(relab2))
+bDom <- colnames(findBacteDom(relab2))
+#oDom <- colnames(otumat)[ -which(colnames(otumat) %in% c(pDom,bDom))]
+dominance <- rep("Other",1003)
+names(dominance) <- sample_names(ps0.gen.all)
+dominance[pDom] <- "Prevotella Dominance"
+dominance[bDom] <- "Bacteroides Dominance"
+# To check
+dominance[1:30]
+pDom[1:30]
+bDom[1:8]
+
+#rownames(tax_table(ps0.gen.all))[tax_table(ps0.gen.all)[,1]=="Bacteroides"]
+#rownames(tax_table(ps0.gen.all))[tax_table(ps0.gen.all)[,1]=="Prevotella"]
+
+# otu58 bacteroides
+# otu265 prev
+
+
+bact_otu <- "Bacteroides"
+prev_otu <- "Prevotella"
+
+#tax_table(ps0.gen.all)["otu58",]
+#tax_table(ps0.gen.all)["otu265",]
+
+pb_ratio <- rep(0,1003)
+names(pb_ratio) <- sample_names(ps0.gen.all)
+pb_ratio <- apply(otu_table(ps0.gen.all),2,function(x) {x[prev_otu]/(x[prev_otu] + x[bact_otu])})
+
+pb_binary <- rep(0,1003)
+pb_binary[pb_ratio>0.5] = 1
+
+bact_abun <- rep(0,1003)
+names(bact_abun) <- sample_names(ps0.gen.all)
+bact_abun <- apply(otu_table(ps0.gen.all),2,function(x) {x[bact_otu]})
+
+prev_abun <- rep(0,1003)
+names(prev_abun) <- colnames(otu_table(ps0.gen.all))
+prev_abun <- apply(otu_table(ps0.gen.all),2,function(x) {x[prev_otu]})
+
+
+
+#Just checking
+otu_table(ps0.gen.all)[prev_otu,4]/(otu_table(ps0.gen.all)[prev_otu,4] + otu_table(ps0.gen.all)[bact_otu,4])
+pb_ratio[4]
+
+otu_table(ps0.gen.all)[bact_otu,26]
+bact_abun[26]
+otu_table(ps0.gen.all)[prev_otu,26]
+prev_abun[26]
+
+
+
+sampledata = sample_data(data.frame(dominance=dominance, 
+                                    pb_ratio=pb_ratio, bact_abun=bact_abun, 
+                                    prev_abun=prev_abun, pb_binary=pb_binary, 
+                                    row.names = sample_names(ps0.gen.all), 
+                                    stringsAsFactors = FALSE))
+sampledata[1:5,]
+sample_data(ps0.gen.all)$dominance <- factor(dominance)
+
+ps0.gen.all3 = merge_phyloseq(ps0.gen.all, sampledata)
+ps0.gen.all3
+meta(ps0.gen.all3)
+
+table(meta(ps0.gen.all3)$Geographical.zone.in.India)
+table(meta(ps0.gen.all3)$Gender)
+
+saveRDS(ps0.gen.all3, "ps0.gen.all3.rds")
+ps0.gen.all3 <- readRDS("ps0.gen.all3.rds")
+```
+
+# ordination 2
+```{r}
+
+ob.ord.mds <- ordinate(ps0.gen.all3, "MDS", "bray")
+
+###Dominance Plots
+myPalette <- colorRampPalette(rev(brewer.pal(11, "Spectral")))
+sc <- scale_colour_gradientn(colours = myPalette(100))
+p_ob_pb <- plot_ordination(ps0.gen.all3, ob.ord.mds, type = "samples", color = "pb_ratio")
+p_ob_pb <- p_ob_pb + geom_point(aes(size = BMI)) + sc + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) 
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+p_ob_pb
+
+ggsave("./figures/Ord_pb_ratio_obse_nob.pdf", height = 4, width = 6)
+ggsave("./figures/Ord_pb_ratio_obse_nob.tiff", height = 4, width = 6)
+ggsave("./figures/Ord_pb_ratio_obse_nob.png", height = 4, width = 6)
+
+p_ob_pb2 <- plot_ordination(ps0.gen.all3, ob.ord.mds, type = "samples", color = "pb_ratio", shape = "Geographical.zone.in.India")
+p_ob_pb2 <- p_ob_pb2 + sc + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) 
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+p_ob_pb2
+ggsave("./figures/Ord_pb_ratio_zone_nob.pdf", height = 4, width = 6)
+ggsave("./figures/Ord_pb_ratio_zone_nob.tiff", height = 4, width = 6)
+ggsave("./figures/Ord_pb_ratio_zone_nob.png", height = 4, width = 6)
+```
+
+
+```{r}
+
+p_ob_pb2 <- plot_ordination(ps0.gen.all3, ob.ord.mds, type = "samples", color = "pb_ratio")
+p_ob_pb2 <- p_ob_pb2 + sc + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+p_ob_pb2 <-p_ob_pb2 + facet_wrap(~Geographical.zone.in.India, scales="free")
+```
+
+
+```{r}
+
+pala <- ggarrange(p_ob_pb, p_ob_pb2, nrow = 2, labels = c("A", "B"))
+pala
+ggsave("./figures/Figure 6 ord_all.pdf", height = 8, width = 8)
+ggsave("./figures/Figure 6 ord_all.tiff", height = 8, width = 8)
+ggsave("./figures/Figure 6 ord_all.png", height = 8, width = 8)
+```
+
+# Supplementary figure 5   
+
+**Corelation between axis 1 and P/B ratio**
+
+Supplementary figure 5: Pearson’s correlation between PCoA axis 1 and P/B ratio. 
+```{r}
+
+p.ob_axis <- p_ob_pb2$data
+
+pc.pb2 <- ggscatter(p.ob_axis, "Axis.1", "pb_ratio",  add = "reg.line",
+                    facet.by = "Geographical.zone.in.India", 
+                    shape = 21, size = 3,
+                    conf.int = TRUE,
+                    xlab = "PCoA 1",
+                    ylab = "P/B ratio")
+
+pc.pb2 <- pc.pb2 + stat_cor(method = "pearson", label.x = -0.3, label.y = 0.25)
+
+pc.pb2 <- pc.pb2 + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+
+pc.pb2
+ggsave("./figures/PCoA1_PB_ratio.pdf", height = 8, width = 8)
+ggsave("./figures/PCoA1_PB_ratio.tiff", height = 8, width = 8)
+ggsave("./figures/PCoA1_PB_ratio.png", height = 8, width = 8)
+```
+
+
+
+
+# Regionwise  
+## Supplementary Figure 1  
+## South
+
+```{r}
+
+ps0.gen.all3.south <- subset_samples(ps0.gen.all3, Geographical.zone.in.India == "South")
+ps0.gen.all3.south <- prune_taxa(taxa_sums(ps0.gen.all3.south) > 0, ps0.gen.all3.south)
+ps0.gen.all3.south.mds.ord <- ordinate(ps0.gen.all3.south, "MDS", "bray")
+
+permanova.south <- adonis(t(abundances(ps0.gen.all3.south)) ~ Geographical.Location,
+               data = meta(ps0.gen.all3.south), permutations=999, method = "bray")
+
+myPalette <- colorRampPalette(rev(brewer.pal(11, "Set1")))
+
+sc.man <- scale_colour_manual(values = myPalette(14))
+
+south.mds.ord <- plot_ordination(ps0.gen.all3.south, ps0.gen.all3.south.mds.ord, 
+                             type = "samples", color = "Geographical.Location" 
+                             ) + geom_point(size = 3)
+
+south.mds.ord <- south.mds.ord + sc.man + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) #+ theme(legend.position="bottom")
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+south.mds.ord + stat_ellipse()
+
+```
+
+## North  
+
+```{r}
+ps0.gen.all3.North <- subset_samples(ps0.gen.all3, Geographical.zone.in.India == "North")
+ps0.gen.all3.North <- prune_taxa(taxa_sums(ps0.gen.all3.North) > 0, ps0.gen.all3.North)
+ps0.gen.all3.North.mds.ord <- ordinate(ps0.gen.all3.North, "MDS", "bray")
+
+permanova.north <- adonis(t(abundances(ps0.gen.all3.North)) ~ Geographical.Location,
+               data = meta(ps0.gen.all3.North), permutations=999, method = "bray")
+permanova.north
+#myPalette <- colorRampPalette(rev(brewer.pal(6, "Paired")))
+
+#sc.man <- scale_colour_manual(values = myPalette(14))
+
+north.mds.ord <- plot_ordination(ps0.gen.all3.North, ps0.gen.all3.North.mds.ord, 
+                             type = "samples", color = "Geographical.Location" 
+                             ) + geom_point(size = 3) + scale_colour_brewer(palette = "Set2")
+
+north.mds.ord <- north.mds.ord + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) #+ theme(legend.position="bottom")
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+north.mds.ord + stat_ellipse()
+```
+
+## West  
+
+```{r}
+ps0.gen.all3.west <- subset_samples(ps0.gen.all3, Geographical.zone.in.India == "West")
+ps0.gen.all3.west <- prune_taxa(taxa_sums(ps0.gen.all3.west) > 0, ps0.gen.all3.west)
+ps0.gen.all3.west.mds.ord <- ordinate(ps0.gen.all3.west, "MDS", "bray")
+
+permanova.west <- adonis(t(abundances(ps0.gen.all3.west)) ~ Geographical.Location,
+               data = meta(ps0.gen.all3.west), permutations=999, method = "bray")
+permanova.west
+
+#myPalette <- colorRampPalette(rev(brewer.pal(6, "Paired")))
+
+#sc.man <- scale_colour_manual(values = myPalette(14))
+
+west.mds.ord <- plot_ordination(ps0.gen.all3.west, ps0.gen.all3.west.mds.ord, 
+                             type = "samples", color = "Geographical.Location" 
+                             ) + geom_point(size = 3) + scale_colour_brewer(palette = "Set3")
+
+west.mds.ord <- west.mds.ord + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) #+ theme(legend.position="bottom")
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+west.mds.ord + stat_ellipse()
+```
+
+
+## East  
+
+```{r}
+ps0.gen.all3.east <- subset_samples(ps0.gen.all3, Geographical.zone.in.India == "East")
+ps0.gen.all3.east <- prune_taxa(taxa_sums(ps0.gen.all3.east) > 0, ps0.gen.all3.east)
+ps0.gen.all3.east.mds.ord <- ordinate(ps0.gen.all3.east, "MDS", "bray")
+
+permanova.east <- adonis(t(abundances(ps0.gen.all3.east)) ~ Geographical.Location,
+               data = meta(ps0.gen.all3.east), permutations=999, method = "bray")
+permanova.east
+permanova.east$coefficients
+#myPalette <- colorRampPalette(rev(brewer.pal(6, "Paired")))
+
+#sc.man <- scale_colour_manual(values = myPalette(14))
+
+east.mds.ord <- plot_ordination(ps0.gen.all3.east, ps0.gen.all3.east.mds.ord, 
+                             type = "samples", color = "Geographical.Location"
+                             ) + geom_point(size = 3) + scale_colour_manual(values = rev(brewer.pal(9, "Paired")))
+
+east.mds.ord <- east.mds.ord + theme_bw() +
+  theme(plot.background = element_blank()
+        ,panel.grid.major = element_blank()
+        ,panel.grid.minor = element_blank()
+        ,panel.background = element_blank()
+        ,axis.text.x  = element_text(angle=90, vjust=0.5, size=12)
+    ) #+ theme(legend.position="bottom")
+	
+  #annotate("text",label="(B)",x = -0.5, y =0.29 , size=7)
+east.mds.ord$data
+
+#east.mds.ord + stat_ellipse(geom = "polygon", type="norm", alpha=0.4, aes(fill=Geographical.Location))
+```
+
+```{r}
+
+p.zone <- ggarrange(east.mds.ord, west.mds.ord, north.mds.ord, south.mds.ord, 
+                    ncol = 2, nrow = 2, labels = c("A", "B", "C", "D"))
+p.zone
+ggsave("./figures/Supplementary Figure S1 zone_indiv_pcoa.pdf", height = 6, width = 10)
+ggsave("./figures/Supplementary Figure S1 zone_indiv_pcoa.tiff", height = 6, width = 10)
+ggsave("./figures/Supplementary Figure S1 zone_indiv_pcoa.png", height = 6, width = 10)
+```
+
+## Supplementary figure 3  
+```{r}
+
+ps0.gen.all3 <- readRDS("ps0.gen.all3.rds")
+write_phyloseq(ps0.gen.all3, "OTU")
+meta_gendf <- meta(ps0.gen.all3)
+colnames(meta_gendf)
+p.ag <- ggscatter(meta_gendf, "AGE..in.years", "pb_ratio",
+                  color = "Obese.Non.Obese", xlab = "Age (years)", ylab = "P/B ratio" ,
+                  palette = c("#e41a1c", "#377eb8", "#4daf4a","#984ea3")) + stat_cor(label.x = 40, label.y = 0.1)
+p.ag 
+
+p.bm <- ggscatter(meta_gendf, "BMI", "pb_ratio",
+                  color = "Gender", xlab = "BMI", ylab = "P/B ratio" ,
+                  palette = c("#4daf4a","#984ea3")) + stat_cor(label.x = 30, label.y = 0.1)
+p.bm
+
+p.ag.bm <- ggarrange(p.ag, p.bm, labels = c("A", "B"))
+ggsave("./figures/Supplementary figure 3 scatter_all.pdf", height = 4, width = 8)
+ggsave("./figures/Supplementary figure 3 scatter_all.tiff", height = 4, width = 8)
+ggsave("./figures/Supplementary figure 3 scatter_all.png", height = 4, width = 8)
+```
+
+
+# Core microbiota  
+
+```{r}
+
+# ps0.occ <- format_to_besthit(ps0)
+#saveRDS(ps0.occ, "ps0.occ.rds")
+ps0.occ <- readRDS("ps0.occ.rds")
+det <- c(0, 0.001, 0.01, 0.1, 0.5, 2, 5, 20)/100
+preval <- seq(.05, 1, .05)
+
+p.core.lne <- plot_core(ps0.occ, prevalences = preval, detections = det, plot.type = "lineplot") + xlab("Relative Abundance (%)") + scale_color_distiller(palette = "Spectral")
+p.core.lne
+
+ggsave("./figures/lne Pan India Core Microbiota.pdf", height = 4, width = 6)
+ggsave("./figures/lne Pan India Core Microbiota.png", height = 4, width = 6)
+prevalences <- seq(.05, 1, .05)
+detections <- 10^seq(log10(1e-4), log10(.2), length = 10)
+
+pancore <- plot_core(ps0.occ, plot.type = "heatmap", 
+                         prevalences = prevalences,
+                         detections = detections,
+                         colours = rev(brewer.pal(5, "RdYlBu")),
+                         min.prevalence = .75, horizontal = F)
+
+
+# sel
+pancore <- pancore + theme_bw(base_size = 10)+ theme(axis.text.y = element_text(face="italic")) 
+
+pancore <- pancore + ggtitle("Pan India Core Microbiota (1003 healthy subjects)")
+
+pancore
+
+core_data <- pancore$data
+write.table(core_data, "Pan_Core_det_prev_values.txt", sep="\t")
+ggsave("./figures/Pan India Core Microbiota.pdf", height = 6, width = 7)
+ggsave("./figures/Pan India Core Microbiota.png", height = 6, width = 7)
+
+```
+
+## Identify core Bootstrap OTU-level
+
+```{r}
+source("./core_scripts/bootstrap_core_estimation.R")
+
+otu.tb <- abundances(ps0.occ)
+
+cor.boot <- bootstrap.microbes(otu.tb, Nsample = NULL, minPrev = 810, Nboot = 1000, 
+                               I.thr = 0.0001, ncore = 1, I.max=NULL)
+cor.boot$Microbe
+write.csv(cor.boot, "cor.boot.csv")
+
+DT::datatable(cor.boot)
+```
+
+
+
+## Identify core Bootstrap Genus-level  
+```{r}
+#source("./core_scripts/bootstrap_core_estimation.R")
+
+otu.gen.tb <- abundances(ps0.gen.all3)
+
+cor.gen.boot <- bootstrap.microbes(otu.gen.tb, Nsample = NULL, minPrev = 810, Nboot = 1000, 
+                               I.thr = 0.0001, ncore = 1, I.max=NULL)
+#cor.gen.boot$Microbe
+write.csv(cor.gen.boot, "cor.gen.boot.csv")
+
+DT::datatable(cor.gen.boot)
+```
+
+
+## Bootstrap Core abundance  
+
+## Supplementary figure 2  
+
+```{r}
+
+core.gen <- subset(cor.gen.boot, suggested.core == 1)
+core.gne.f <- as.character(core.gen$Microbe)
+core.ps0.gen <- prune_taxa(core.gne.f, ps0.gen.all3)
+
+core.gen.ab_0.001 <- sample_sums(core.ps0.gen)
+
+sample_data(core.ps0.gen)$coreAb_0.001 <- core.gen.ab_0.001
+coreAB.gen <- ggboxplot(meta(core.ps0.gen), "Gender", "coreAb_0.001", 
+                   #color = "BMI", 
+                   facet.by = "Geographical.zone.in.India",
+                   add= "jitter", 
+                   xlab = "Geographical zone in India",
+                   ylab = "Core genus abundance\n(Detection = 0.0001 and Prevalence = 80%)")
+coreAB.gen <- coreAB.gen + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+coreAB.gen
+ggsave("./figures/Supplementary figure 2 Pan India Core genus abudnace.pdf", height = 6, width = 7)
+ggsave("./figures/Supplementary figure 2 Pan India Core genus abundance.png", height = 6, width = 7)
+```
+
+**OTU-lev**  
+
+```{r}
+
+core.taxa.standard <- core_members(ps0.occ, detection = .0001, prevalence = .95)
+
+core.abundance_0.001 <- sample_sums(core(ps0.occ, detection = .0001, prevalence = .95))
+
+sample_data(ps0.occ)$coreAb_0.001 <- core.abundance_0.001
+
+ps0.occ_meta <- meta(ps0.occ)
+colnames(ps0.occ_meta)
+coreAB <- ggboxplot(ps0.occ_meta, "Gender", "coreAb_0.001", 
+                   #color = "BMI", 
+                   facet.by = "Geographical.zone.in.India",
+                   add= "jitter", 
+                   xlab = "Geographical zone in India",
+                   ylab = "Core abundance\n(Detection = 0.0001 and Prevalence = 95%)")
+coreAB <- coreAB + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+coreAB
+
+ggsave("./figures/Pan India Core abudnace.pdf", height = 6, width = 7)
+ggsave("./figures/Pan India Core abundance.png", height = 6, width = 7)
+```
+
+
+## Supplementary figure 4  
+
+```{r}
+head(meta(ps0.gen.all3))
+
+meta.pball <- meta(ps0.gen.all3)
+
+meta.pball$logPBratio <- log10(meta.pball$pb_ratio)
+
+# no dif gender
+p.com <- ggboxplot(meta.pball, "Gender", "pb_ratio",
+                   ylab = "P/B ratio",
+                   facet.by = "Geographical.zone.in.India") 
+p.com <- p.com + stat_compare_means() + theme(legend.key = element_blank(), 
+                     strip.background = element_rect(colour="black", fill="white"))
+
+p.com 
+
+ggsave("./figures/pb_ratio_gender.pdf", height = 4, width = 6)
+ggsave("./figures/pb_ratio_gender.tiff", height = 4, width = 6)
+ggsave("./figures/pb_ratio_gender.png", height = 4, width = 6)
+
+
+gloc <- levels(meta.pball$Geographical.zone.in.India) # get the variables
+
+# make a pairwise list that we want to compare.
+gloc.pairs <- combn(seq_along(gloc), 2, simplify = FALSE, FUN = function(i)gloc[i])
+
+p.com2 <- ggboxplot(meta.pball, "Geographical.zone.in.India", "pb_ratio", facet.by = "Obese.Non.Obese") 
+p.com2 <- p.com2 + stat_compare_means(comparisons = gloc.pairs) 
+p.com2
+str(meta.pball)
+
+ggsave("./figures/pb_ratio_obse_nob.pdf", height = 4, width = 6)
+ggsave("./figures/pb_ratio_obse_nob.tiff", height = 4, width = 6)
+ggsave("./figures/pb_ratio_obse_nob.png", height = 4, width = 6)
+
+
+
+ggscatter(meta.pball, "BMI", "pb_ratio", facet.by = "Geographical.zone.in.India", color = "Obese.Non.Obese") + stat_cor()
+
+```
+
+
+# Genus level differnces between metadata  
+
+```{r}
+ps0.gen.all3 <- readRDS("ps0.gen.all3.rds")
+
+#dir.create("Stat_Tables")
+
+# Base inputs  
+source("./core_scripts/find_sigDiff_taxa.R")
+
+# otutable
+ts_fp <- as.data.frame.matrix(abundances(ps0.gen.all3)) 
+# metadata
+map_fp <- meta(ps0.gen.all3)
+
+# Geographical zones 
+taxa_diff.zone <- differences_in_taxa(ts_fp,
+                                 map_fp,
+                                 factor = 'Geographical.zone.in.India',
+                                 filterLevel = 0.005,
+                                 testType = 'KW'
+                                 )
+
+taxa_diff.zone.sig <- subset(taxa_diff.zone, pvalsBon <= 0.01)
+head(taxa_diff.zone.sig)
+write.csv(taxa_diff.zone.sig, "./Stat_Tables/Geographical.zone.in.India.csv")
+
+# Geographical cities 
+taxa_diff.city <- differences_in_taxa(ts_fp,
+                                 map_fp,
+                                 factor = 'Geographical.Location',
+                                 filterLevel = 0.005,
+                                 testType = 'KW'
+                                 )
+
+taxa_diff.city.sig <- subset(taxa_diff.city, pvalsBon <= 0.01)
+head(taxa_diff.city.sig)
+write.csv(taxa_diff.city.sig, "./Stat_Tables/Geographical.city.in.India.csv")
+
+
+# Life.style.pattern 
+taxa_diff.life <- differences_in_taxa(ts_fp,
+                                 map_fp,
+                                 factor = 'Life.style.pattern',
+                                 filterLevel = 0.005,
+                                 testType = 'MW'
+                                 )
+
+taxa_diff.life.sig <- subset(taxa_diff.life, pvalsBon <= 0.01)
+head(taxa_diff.life.sig)
+write.csv(taxa_diff.life.sig, "./Stat_Tables/LifeStylePattern.csv")
+
+p.tax.Life.style.pattern <- plot_select_taxa2(ps0.gen.all3, rownames(taxa_diff.life.sig), variableA = "Life.style.pattern", "Paired", "violin")
+p.tax.Life.style.pattern
+
+
+# Obese 
+taxa_diff.Obese.Non.Obese <- differences_in_taxa(ts_fp,
+                                 map_fp,
+                                 factor = 'Obese.Non.Obese',
+                                 filterLevel = 0.005,
+                                 testType = 'MW'
+                                 )
+
+taxa_diff.Obese.Non.Obese.sig <- subset(taxa_diff.Obese.Non.Obese, pvalsBon <= 0.01)
+head(taxa_diff.Obese.Non.Obese.sig)
+# No significant genus level
+
+# Gender
+
+taxa_diff.Gender <- differences_in_taxa(ts_fp,
+                                 map_fp,
+                                 factor = 'Gender',
+                                 filterLevel = 0.005,
+                                 testType = 'MW'
+                                 )
+
+taxa_diff.Gender.sig <- subset(taxa_diff.Gender, pvalsBon <= 0.01)
+head(taxa_diff.Gender.sig)
+# No significant genus level
+
+taxa_diff.Gender.sig <- subset(taxa_diff.Gender, pvals <= 0.05)
+
+
+```
+
+
+
+
